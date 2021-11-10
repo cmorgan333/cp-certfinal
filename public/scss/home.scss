@@ -7,5 +7,68 @@
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		.home-text {
+			width: 442px;
+			height: 401px;
+			position: absolute;
+
+			.big-circle {
+				width: 358px;
+				height: 358px;
+				margin-top: 43px;
+				background-color: #ffd972;
+				border-radius: 180px;
+				position: absolute;
+				z-index: 99;
+				display: flex;
+				// align-items: center;
+				// justify-content: center;
+				.big-text {
+					h1 {
+						width: 227px;
+						height: 24px;
+						margin-top: 114px;
+						margin-left: 92.5px;
+						font-family: $font1;
+						font-size: 24px;
+						letter-spacing: 2.4px;
+					}
+					p {
+						width: 166px;
+						height: 80px;
+						margin-top: 30.5px;
+						margin-left: 95px;
+						font-family: $font6;
+						font-size: 13px;
+						text-align: center;
+					}
+				}
+			}
+			.small-circle {
+				width: 168px;
+				height: 168px;
+				border-radius: 180px;
+				background-color: #fcbcb8;
+				position: relative;
+				left: 275px;
+				display: flex;
+
+				.small {
+					width: 106px;
+					height: 38px;
+					font-family: $font4;
+					font-size: 10px;
+					margin-top: 60px;
+					margin-left: 30.5px;
+					text-align: center;
+					letter-spacing: 1px;
+					line-height: 12px;
+				}
+			}
+		}
 	}
 }
