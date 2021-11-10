@@ -56,6 +56,7 @@ p {
   src: url(../css/fonts/GillSans.ttf);
 }
 nav {
+  width: 100vw;
   position: absolute;
   display: flex;
   align-items: center;
@@ -72,6 +73,7 @@ nav .logo {
   background-repeat: no-repeat;
 }
 nav .nav-holder {
+  position: relative;
   width: 500px;
   margin: 52px;
   display: flex;
@@ -97,4 +99,56 @@ nav .nav-holder button {
   font-family: Caveat Regular;
   font-size: 25px;
   border: none;
+}
+
+footer {
+  height: 60px;
+  margin-top: -70px;
+  padding-bottom: 24px;
+  font-family: LatoItalic;
+  color: #393939;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 99;
+}
+footer .copyright {
+  width: 266px;
+  height: 18px;
+  margin-left: 40px;
+}
+footer .misc {
+  width: 645px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .socials {
+  width: 78px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 40px;
+}
+footer .socials .fbook {
+  width: 19px;
+  height: 19px;
+  background-image: url(../images/socials/fbook.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+footer .socials .insta {
+  width: 19px;
+  height: 19px;
+  background-image: url(../images/socials/insta.png);
+}
+
+.home-content .home-hero {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to right, rgba(242, 92, 84, 0.6), rgba(242, 92, 84, 0.6)), url(../images/hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
