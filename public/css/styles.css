@@ -18,3 +18,83 @@ h6,
 p {
   margin-bottom: 16px;
 }
+
+@font-face {
+  font-family: Caveat Bold;
+  src: url(../css/fonts/Caveat-Bold.ttf);
+}
+@font-face {
+  font-family: Caveat Regular;
+  src: url(../css/fonts/Caveat-Regular.ttf);
+}
+@font-face {
+  font-family: LatoBlack;
+  src: url(../css/fonts/Lato-Black.ttf);
+}
+@font-face {
+  font-family: LatoItalic;
+  src: url(../css/fonts/Lato-Italic.ttf);
+}
+@font-face {
+  font-family: LatoLight;
+  src: url(../css/fonts/Lato-Light.ttf);
+}
+@font-face {
+  font-family: LatoRegular;
+  src: url(../css/fonts/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: GillSans Italic;
+  src: url(../css/fonts/GillSansItalic.ttf);
+}
+@font-face {
+  font-family: GillSans-Light;
+  src: url(../css/fonts/GillSans-Light.ttf);
+}
+@font-face {
+  font-family: GillSans;
+  src: url(../css/fonts/GillSans.ttf);
+}
+nav {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 99;
+}
+nav .logo {
+  width: 168px;
+  height: 55px;
+  margin-left: 50px;
+  background-image: url(../images/logo/logofont.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+nav .nav-holder {
+  width: 500px;
+  margin: 52px;
+  display: flex;
+  justify-content: space-between;
+}
+nav .nav-holder .links {
+  width: 500px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+nav .nav-holder .links a {
+  font-family: Caveat Regular;
+  font-size: 25px;
+  color: #000;
+  text-decoration: none;
+}
+nav .nav-holder button {
+  width: 168px;
+  height: 55px;
+  border-radius: 26px;
+  background-color: #ffd972;
+  font-family: Caveat Regular;
+  font-size: 25px;
+  border: none;
+}
