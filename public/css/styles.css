@@ -222,3 +222,11 @@ footer .socials .insta {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.browse-content .browse-hero .recipes-container {
+  width: 1100px;
+}
+.browse-content .browse-hero .recipes-container .recipe-box {
+  width: 524px;
+  height: 263px;
+  background-color: hotpink;
+}
