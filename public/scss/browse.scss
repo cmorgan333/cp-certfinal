@@ -1,0 +1,17 @@
+.browse-content {
+	.browse-hero {
+		width: 100vw;
+		height: 100vh;
+		background-image: linear-gradient(to right, rgba(167, 232, 189, .8), rgba(167, 232, 189, .8)),
+			url(../images/recipe-hero.jpg);
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		// display: flex;
+		// align-items: center;
+		// justify-content: center;
+
+		.recipes-container {
+		}
+	}
+}

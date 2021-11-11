@@ -6,7 +6,7 @@ MODEL.updateView(pageID)
 }
 
 function initURLListener(){
-    $(window).on("hashChange", changeRoute);
+    $(window).on("hashchange", changeRoute);
     changeRoute();
 }
 
