@@ -12,18 +12,67 @@
 		h1 {
 			font-family: $font1;
 			font-size: 25px;
+			margin-bottom: 50px;
 			padding-top: 200px;
 		}
 
 		h3 {
+			height: 30px;
 			font-family: $font3;
 			font-size: 20px;
+			margin-bottom: 20px;
+		}
+		.input-holder {
+			position: absolute;
 		}
 		input {
 			width: 981px;
+			height: 40px;
 			border: none;
 			margin-bottom: 100px;
 			border-bottom: 3px solid #000;
 		}
+		.attach {
+			width: 110px;
+			height: 36px;
+			position: relative;
+			right: 110px;
+			background-color: #efa7a7;
+		}
+	}
+	.add {
+		width: 38px;
+		height: 38px;
+		position: relative;
+		top: -145px;
+		left: 940px;
+		// right: 40px;
+		background-color: #efa7a7;
+		box-shadow: none;
+		display: flex;
+		// align-items: center;
+		justify-content: center;
+		span {
+			width: 13px;
+			height: 23px;
+			margin-right: 3px;
+		}
+	}
+
+	::placeholder {
+		font-family: $font5;
+		font-size: 20px;
+		color: #000;
+	}
+
+	.create-button {
+		width: 422px;
+		height: 52px;
+		border-radius: 26px;
+		background-color: #efa7a7;
+		font-family: $font2;
+		font-size: 25px;
+		margin-bottom: 60px;
+		margin-left: 275px;
 	}
 }
