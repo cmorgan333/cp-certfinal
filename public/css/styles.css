@@ -226,25 +226,91 @@ footer .socials .insta {
 .browse-content .browse-hero .recipe-container {
   width: 1100px;
   min-height: 200px;
-  margin: 300px auto;
-  background-color: hotpink;
+  margin: 220px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .browse-content .browse-hero h1 {
+  width: 100%;
   font-family: Caveat Bold;
   font-size: 25px;
 }
 .browse-content .browse-hero .recipe-box {
   width: 524px;
   height: 263px;
+  margin-bottom: 50px;
   display: flex;
 }
 .browse-content .browse-hero .recipe-box .recipe-image {
   width: 300px;
   height: 263px;
-  background-color: chartreuse;
+  border-radius: 24px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.browse-content .browse-hero .recipe-box .pizza {
+  background-image: url(../images/recipe-pizza.jpg);
+}
+.browse-content .browse-hero .recipe-box .burger {
+  background-image: url(../images/recipe-burger.jpg);
+}
+.browse-content .browse-hero .recipe-box .pilaf {
+  background-image: url(../images/recipe-pilaf.jpg);
+}
+.browse-content .browse-hero .recipe-box .chowmein {
+  background-image: url(../images/recipe-chowmein.jpg);
 }
 .browse-content .browse-hero .recipe-box .recipe-description {
   width: 224px;
   height: 263px;
-  background-color: teal;
+  border-radius: 24px;
+  background-color: #ffffff;
+}
+.browse-content .browse-hero .recipe-box .recipe-description .recipe-title {
+  width: 140px;
+  border-bottom: 3px solid;
+  margin: 46px auto 21px auto;
+  font-family: LatoBlack;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+}
+.browse-content .browse-hero .recipe-box .recipe-description .recipe-text {
+  width: 150px;
+  min-height: 100px;
+  margin: 0 auto;
+  letter-spacing: 0.9px;
+  line-height: 11px;
+  font-family: LatoRegular;
+  font-size: 9px;
+}
+.browse-content .browse-hero .recipe-box .recipe-description .recipe-stats {
+  width: 84px;
+  margin: 0 auto 10px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.browse-content .browse-hero .recipe-box .recipe-description .icon {
+  width: 23px;
+  height: 25px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.browse-content .browse-hero .recipe-box .recipe-description .timer {
+  background-image: url(../images/icons/time.svg);
+}
+.browse-content .browse-hero .recipe-box .recipe-description .meal {
+  background-image: url(../images/icons/servings.svg);
+}
+.browse-content .browse-hero .recipe-box .recipe-description .time {
+  width: 46px;
+  font-family: LatoRegular;
+  font-size: 10px;
+}
+.browse-content .browse-hero .recipe-box .recipe-description .servings {
+  width: 46px;
+  font-family: LatoRegular;
+  font-size: 10px;
 }

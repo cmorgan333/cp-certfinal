@@ -59,6 +59,10 @@ function initURLListener(){
     changeRoute();
 }
 
+// ====OBJECTS====//
+
+
+// ===DOCUMENT READY===//
 $(document).ready(function() {
     initURLListener();
 });
