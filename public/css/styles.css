@@ -233,3 +233,18 @@ footer .socials .insta {
   font-family: Caveat Bold;
   font-size: 25px;
 }
+.browse-content .browse-hero .recipe-box {
+  width: 524px;
+  height: 263px;
+  display: flex;
+}
+.browse-content .browse-hero .recipe-box .recipe-image {
+  width: 300px;
+  height: 263px;
+  background-color: chartreuse;
+}
+.browse-content .browse-hero .recipe-box .recipe-description {
+  width: 224px;
+  height: 263px;
+  background-color: teal;
+}

@@ -20,16 +20,21 @@
 			font-size: 25px;
 		}
 
-		// align-items: center;
-		// justify-content: center;
+		.recipe-box {
+			width: 524px;
+			height: 263px;
+			display: flex;
 
-		// .recipes-container {
-		// 	width: 1100px;
-		// 	.recipe-box {
-		// 		width: 524px;
-		// 		height: 263px;
-		// 		background-color: hotpink;
-		// 	}
-		// }
+			.recipe-image {
+				width: 300px;
+				height: 263px;
+				background-color: chartreuse;
+			}
+			.recipe-description {
+				width: 224px;
+				height: 263px;
+				background-color: teal;
+			}
+		}
 	}
 }
