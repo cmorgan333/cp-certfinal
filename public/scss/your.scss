@@ -1,0 +1,112 @@
+.your-content {
+	.your-hero {
+		width: 100vw;
+		height: 100vh;
+		background-image: linear-gradient(to right, rgba(167, 232, 189, .8), rgba(167, 232, 189, .8)),
+			url(../images/recipe-hero.jpg);
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		display: flex;
+
+		.your-container {
+			width: 1100px;
+			min-height: 200px;
+			margin: 220px auto;
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+		}
+		h1 {
+			width: 100%;
+			font-family: $font1;
+			font-size: 25px;
+		}
+
+		.your-box {
+			width: 524px;
+			height: 263px;
+			margin-bottom: 50px;
+			display: flex;
+
+			.your-image {
+				width: 300px;
+				height: 263px;
+				border-radius: 24px;
+				background-position: center;
+				background-size: cover;
+				background-repeat: no-repeat;
+			}
+
+			.pizza {
+				background-image: url(../images/recipe-pizza.jpg);
+			}
+
+			// .burger {
+			// 	background-image: url(../images/recipe-burger.jpg);
+			// }
+
+			// .pilaf {
+			// 	background-image: url(../images/recipe-pilaf.jpg);
+			// }
+
+			// .chowmein {
+			// 	background-image: url(../images/recipe-chowmein.jpg);
+			// }
+
+			.your-description {
+				width: 224px;
+				height: 263px;
+				border-radius: 24px;
+				background-color: #ffffff;
+
+				.your-title {
+					width: 140px;
+					border-bottom: 3px solid;
+					margin: 46px auto 21px auto;
+					font-family: $font3;
+					font-size: 15px;
+					letter-spacing: 1.5px;
+				}
+				.your-text {
+					width: 150px;
+					min-height: 100px;
+					margin: 0 auto;
+					letter-spacing: .9px;
+					line-height: 11px;
+					font-family: $font6;
+					font-size: 9px;
+				}
+				.recipe-stats {
+					width: 84px;
+					margin: 0 auto 10px auto;
+					display: flex;
+					justify-content: space-between;
+				}
+				.icon {
+					width: 23px;
+					height: 25px;
+					background-position: center;
+					background-size: cover;
+					background-repeat: no-repeat;
+				}
+				.timer {
+					background-image: url(../images/icons/time.svg);
+				}
+				.meal {
+					background-image: url(../images/icons/servings.svg);
+				}
+				.time {
+					width: 46px;
+					font-family: $font6;
+					font-size: 10px;
+				}
+				.servings {
+					width: 46px;
+					font-family: $font6;
+					font-size: 10px;
+				}
+			}
+		}
+	}
+}
