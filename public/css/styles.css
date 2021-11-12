@@ -380,3 +380,29 @@ button {
   font-family: Caveat Regular;
   font-size: 25px;
 }
+
+.create-content {
+  width: 100vw;
+  display: flex;
+}
+.create-content .field-container {
+  width: 980px;
+  min-height: 200px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+.create-content .field-container h1 {
+  font-family: Caveat Bold;
+  font-size: 25px;
+  padding-top: 200px;
+}
+.create-content .field-container h3 {
+  font-family: LatoBlack;
+  font-size: 20px;
+}
+.create-content .field-container input {
+  width: 981px;
+  border: none;
+  margin-bottom: 100px;
+  border-bottom: 3px solid #000;
+}
