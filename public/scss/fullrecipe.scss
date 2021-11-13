@@ -11,17 +11,63 @@
 
 		.image-descript {
 			width: 955px;
-			height: 433px;
+			height: 422px;
 			margin-top: 250px;
+			display: flex;
+			justify-content: space-between;
 			background-color: teal;
 
-			.fullrecipe-image;
-			width: 468px;
-			height: 421px;
-			background-image: url(../images/recipe-pizza.jpg);
-			background-position: center;
-			background-size: cover;
-			background-repeat: no-repeat;
+			.fullrecipe-image {
+				width: 468px;
+				height: 422px;
+				background-image: url(../images/recipe-pizza.jpg);
+				background-position: center;
+				background-size: cover;
+				background-repeat: no-repeat;
+			}
+			.fullrecipe-description {
+				width: 452px;
+				height: 422px;
+
+				.descript {
+					font-family: $font3;
+					font-size: 25px;
+					margin-bottom: 35px;
+				}
+				.fullrecipe-text {
+					font-family: $font2;
+					font-size: 20px;
+					margin-bottom: 45px;
+				}
+				.total-time {
+					font-family: $font3;
+					font-size: 20px;
+					margin-bottom: 39px;
+				}
+				.time {
+					font-family: $font2;
+					font-size: 20px;
+					margin-bottom: 45px;
+				}
+				.serve {
+					font-family: $font3;
+					font-size: 20px;
+					margin-bottom: 39px;
+				}
+				.servings {
+					font-family: $font2;
+					font-size: 20px;
+					margin-bottom: 39px;
+				}
+			}
+		}
+		.ingredient-container {
+			width: 445px;
+			background-color: chartreuse;
+			.ingred-title {
+			}
+			.ingredients {
+			}
 		}
 	}
 }

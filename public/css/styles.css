@@ -582,7 +582,55 @@ button {
 }
 .fullrecipe-content .fullrecipe-container .image-descript {
   width: 955px;
-  height: 433px;
+  height: 422px;
   margin-top: 250px;
+  display: flex;
+  justify-content: space-between;
   background-color: teal;
+}
+.fullrecipe-content .fullrecipe-container .image-descript .fullrecipe-image {
+  width: 468px;
+  height: 422px;
+  background-image: url(../images/recipe-pizza.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.fullrecipe-content .fullrecipe-container .image-descript .fullrecipe-description {
+  width: 452px;
+  height: 422px;
+}
+.fullrecipe-content .fullrecipe-container .image-descript .fullrecipe-description .descript {
+  font-family: LatoBlack;
+  font-size: 25px;
+  margin-bottom: 35px;
+}
+.fullrecipe-content .fullrecipe-container .image-descript .fullrecipe-description .fullrecipe-text {
+  font-family: Caveat Regular;
+  font-size: 20px;
+  margin-bottom: 45px;
+}
+.fullrecipe-content .fullrecipe-container .image-descript .fullrecipe-description .total-time {
+  font-family: LatoBlack;
+  font-size: 20px;
+  margin-bottom: 39px;
+}
+.fullrecipe-content .fullrecipe-container .image-descript .fullrecipe-description .time {
+  font-family: Caveat Regular;
+  font-size: 20px;
+  margin-bottom: 45px;
+}
+.fullrecipe-content .fullrecipe-container .image-descript .fullrecipe-description .serve {
+  font-family: LatoBlack;
+  font-size: 20px;
+  margin-bottom: 39px;
+}
+.fullrecipe-content .fullrecipe-container .image-descript .fullrecipe-description .servings {
+  font-family: Caveat Regular;
+  font-size: 20px;
+  margin-bottom: 39px;
+}
+.fullrecipe-content .fullrecipe-container .ingredient-container {
+  width: 445px;
+  background-color: chartreuse;
 }
