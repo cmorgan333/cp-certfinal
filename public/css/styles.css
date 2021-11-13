@@ -476,7 +476,7 @@ button {
 }
 .your-content .your-hero .your-box {
   width: 524px;
-  height: 263px;
+  min-height: 263px;
   margin-bottom: 50px;
   display: flex;
 }
@@ -487,6 +487,13 @@ button {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.your-content .your-hero .your-box .view {
+  width: 128px;
+  height: 42px;
 }
 .your-content .your-hero .your-box .pizza {
   background-image: url(../images/recipe-pizza.jpg);
@@ -542,4 +549,40 @@ button {
   width: 46px;
   font-family: LatoRegular;
   font-size: 10px;
+}
+.your-content .your-hero .your-box .edit-delete-container {
+  position: absolute;
+  width: 300px;
+  height: 42px;
+  top: 650px;
+  display: flex;
+  justify-content: space-around;
+  font-family: Caveat Regular;
+  font-size: 20px;
+}
+.your-content .your-hero .your-box .edit-delete-container .edit {
+  width: 128px;
+  height: 42px;
+}
+.your-content .your-hero .your-box .edit-delete-container .delete {
+  width: 128px;
+  height: 42px;
+}
+
+.fullrecipe-content {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+.fullrecipe-content .fullrecipe-container {
+  width: 955px;
+  min-height: 200px;
+  margin: 0 auto;
+  background-color: chartreuse;
+}
+.fullrecipe-content .fullrecipe-container .image-descript {
+  width: 955px;
+  height: 433px;
+  margin-top: 250px;
+  background-color: teal;
 }

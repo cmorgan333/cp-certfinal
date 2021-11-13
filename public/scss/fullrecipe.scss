@@ -1,0 +1,27 @@
+.fullrecipe-content {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+
+	.fullrecipe-container {
+		width: 955px;
+		min-height: 200px;
+		margin: 0 auto;
+		background-color: chartreuse;
+
+		.image-descript {
+			width: 955px;
+			height: 433px;
+			margin-top: 250px;
+			background-color: teal;
+
+			.fullrecipe-image;
+			width: 468px;
+			height: 421px;
+			background-image: url(../images/recipe-pizza.jpg);
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+	}
+}
