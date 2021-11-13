@@ -571,14 +571,12 @@ button {
 
 .fullrecipe-content {
   width: 100vw;
-  height: 100vh;
   display: flex;
 }
 .fullrecipe-content .fullrecipe-container {
   width: 955px;
   min-height: 200px;
   margin: 0 auto;
-  background-color: chartreuse;
 }
 .fullrecipe-content .fullrecipe-container .image-descript {
   width: 955px;
@@ -586,7 +584,6 @@ button {
   margin-top: 250px;
   display: flex;
   justify-content: space-between;
-  background-color: teal;
 }
 .fullrecipe-content .fullrecipe-container .image-descript .fullrecipe-image {
   width: 468px;
@@ -632,5 +629,32 @@ button {
 }
 .fullrecipe-content .fullrecipe-container .ingredient-container {
   width: 445px;
-  background-color: chartreuse;
+}
+.fullrecipe-content .fullrecipe-container .ingredient-container .ingred-title {
+  font-family: LatoBlack;
+  font-size: 25px;
+  margin-top: 66px;
+  margin-bottom: 35px;
+}
+.fullrecipe-content .fullrecipe-container .ingredient-container .ingredient {
+  font-family: Caveat Regular;
+  font-size: 20px;
+}
+.fullrecipe-content .fullrecipe-container .instructions-container {
+  width: 955px;
+  margin-top: 66px;
+}
+.fullrecipe-content .fullrecipe-container .instructions-container .instruct-title {
+  font-family: LatoBlack;
+  font-size: 25px;
+}
+.fullrecipe-content .fullrecipe-container .instructions-container .instruction {
+  font-family: Caveat Regular;
+  font-size: 20px;
+}
+.fullrecipe-content .fullrecipe-container .edit {
+  width: 127px;
+  height: 42px;
+  margin-top: 60px;
+  margin-bottom: 120px;
 }

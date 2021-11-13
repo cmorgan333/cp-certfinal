@@ -1,13 +1,12 @@
 .fullrecipe-content {
 	width: 100vw;
-	height: 100vh;
+	// height: 100vh;
 	display: flex;
 
 	.fullrecipe-container {
 		width: 955px;
 		min-height: 200px;
 		margin: 0 auto;
-		background-color: chartreuse;
 
 		.image-descript {
 			width: 955px;
@@ -15,7 +14,6 @@
 			margin-top: 250px;
 			display: flex;
 			justify-content: space-between;
-			background-color: teal;
 
 			.fullrecipe-image {
 				width: 468px;
@@ -63,11 +61,36 @@
 		}
 		.ingredient-container {
 			width: 445px;
-			background-color: chartreuse;
+
 			.ingred-title {
+				font-family: $font3;
+				font-size: 25px;
+				margin-top: 66px;
+				margin-bottom: 35px;
 			}
-			.ingredients {
+			.ingredient {
+				font-family: $font2;
+				font-size: 20px;
 			}
+		}
+		.instructions-container {
+			width: 955px;
+			margin-top: 66px;
+
+			.instruct-title {
+				font-family: $font3;
+				font-size: 25px;
+			}
+			.instruction {
+				font-family: $font2;
+				font-size: 20px;
+			}
+		}
+		.edit {
+			width: 127px;
+			height: 42px;
+			margin-top: 60px;
+			margin-bottom: 120px;
 		}
 	}
 }
