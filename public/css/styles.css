@@ -110,24 +110,22 @@ nav .nav-holder .links {
   justify-content: space-evenly;
   align-items: center;
   transition: height 0.4s, opacity 0.4s ease-in;
-  background-color: teal;
 }
-nav .nav-holder .links a {
+nav .nav-holder a {
   font-family: Caveat Regular;
   font-size: 25px;
   color: #000;
   text-decoration: none;
   letter-spacing: 2.5px;
 }
-nav .nav-holder .links .links.active {
+nav .nav-holder .links.active {
   height: 60vh;
   opacity: 1;
-  background-color: hotpink;
 }
-nav .nav-holder .links .your {
+nav .nav-holder .your {
   display: none;
 }
-nav .nav-holder .links .active {
+nav .nav-holder .active {
   width: 54px;
 }
 nav button {
@@ -152,7 +150,6 @@ nav button {
     top: 55px;
     right: 10px;
     width: 100vw;
-    background-color: red;
   }
   nav .nav-holder .bars {
     display: block;
@@ -162,10 +159,9 @@ nav button {
     width: 100vw;
     height: 50vh;
     opacity: 0;
-    margin-left: -10px;
     flex-direction: column;
     transition: height 0.4s, opacity 0.4s ease-in;
-    background-color: chartreuse;
+    background-color: #f25c54;
   }
 }
 footer {

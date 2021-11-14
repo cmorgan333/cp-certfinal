@@ -62,28 +62,26 @@ nav {
 			justify-content: space-evenly;
 			align-items: center;
 			transition: height .4s, opacity .4s ease-in;
-			background-color: teal;
-			a {
-				font-family: $font2;
-				font-size: 25px;
-				color: #000;
-				text-decoration: none;
-				letter-spacing: 2.5px;
-			}
+		}
+		a {
+			font-family: $font2;
+			font-size: 25px;
+			color: #000;
+			text-decoration: none;
+			letter-spacing: 2.5px;
+		}
 
-			.links.active {
-				height: 60vh;
-				opacity: 1;
-				background-color: hotpink;
-			}
+		.links.active {
+			height: 60vh;
+			opacity: 1;
+		}
 
-			.your {
-				display: none;
-			}
-			.active {
-				width: 54px;
-				// border-bottom: 3px #000 solid;
-			}
+		.your {
+			display: none;
+		}
+		.active {
+			width: 54px;
+			// border-bottom: 3px #000 solid;
 		}
 	}
 	button {
@@ -112,7 +110,6 @@ nav {
 			// left: 100px;
 			right: 10px;
 			width: 100vw;
-			background-color: red;
 			// z-index: 99;
 
 			.bars {
@@ -123,10 +120,10 @@ nav {
 				width: 100vw;
 				height: 50vh;
 				opacity: 0;
-				margin-left: -10px;
+
 				flex-direction: column;
 				transition: height .4s, opacity .4s ease-in;
-				background-color: chartreuse;
+				background-color: rgba(242, 92, 84, 1);
 			}
 		}
 	}
