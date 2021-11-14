@@ -23,7 +23,7 @@
 				background-color: #ffd972;
 				border-radius: 180px;
 				position: absolute;
-				z-index: 99;
+				z-index: 50;
 				display: flex;
 				// align-items: center;
 				// justify-content: center;
@@ -70,5 +70,10 @@
 				}
 			}
 		}
+	}
+}
+@media only screen and (max-width: 960px) {
+	.big-circle {
+		z-index: 50;
 	}
 }

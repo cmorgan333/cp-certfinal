@@ -59,10 +59,23 @@ function initURLListener(){
     changeRoute();
 }
 
+function initListeners() {
+    $(".bars").click(function (e) {
+        $(".bars").toggleClass("active");
+        $(".links").toggleClass("active");
+    });
+
+$(".links a").click(function (e) {
+    $(".bars").toggleClass("active");
+    $(".links").toggleClass("active");
+});
+}
+
 // ====OBJECTS====//
 
 
 // ===DOCUMENT READY===//
 $(document).ready(function() {
     initURLListener();
+    initListeners();
 });

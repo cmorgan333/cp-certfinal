@@ -61,7 +61,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 99;
 }
 nav .logo {
   width: 168px;
@@ -73,17 +72,45 @@ nav .logo {
   background-repeat: no-repeat;
 }
 nav .nav-holder {
-  position: relative;
-  width: 700px;
-  margin: 52px;
   display: flex;
+  top: 10px;
   justify-content: space-between;
+  z-index: 99;
+}
+nav .nav-holder .bars {
+  position: absolute;
+  display: none;
+  right: 10px;
+  top: -40px;
+}
+nav .nav-holder .bars .bar {
+  display: block;
+  width: 25px;
+  margin: 5px 0;
+  background-color: #000;
+  height: 3px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+nav .nav-holder .bars.active .bar:nth-child(2) {
+  opacity: 0;
+}
+nav .nav-holder .bars.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+nav .nav-holder .bars.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
 }
 nav .nav-holder .links {
   width: 600px;
   display: flex;
+  height: 70px;
+  margin-left: -10px;
+  overflow: hidden;
   justify-content: space-evenly;
   align-items: center;
+  transition: height 0.4s, opacity 0.4s ease-in;
+  background-color: teal;
 }
 nav .nav-holder .links a {
   font-family: Caveat Regular;
@@ -92,11 +119,18 @@ nav .nav-holder .links a {
   text-decoration: none;
   letter-spacing: 2.5px;
 }
+nav .nav-holder .links .links.active {
+  height: 60vh;
+  opacity: 1;
+  background-color: hotpink;
+}
+nav .nav-holder .links .your {
+  display: none;
+}
 nav .nav-holder .links .active {
   width: 54px;
-  border-bottom: 3px #000 solid;
 }
-nav .nav-holder button {
+nav button {
   width: 168px;
   height: 55px;
   border-radius: 26px;
@@ -107,6 +141,33 @@ nav .nav-holder button {
   box-shadow: 0px 10px 6px #00000029;
 }
 
+@media only screen and (max-width: 960px) {
+  nav {
+    display: flex;
+    z-index: 99;
+  }
+  nav .nav-holder {
+    position: absolute;
+    height: 50vh;
+    top: 55px;
+    right: 10px;
+    width: 100vw;
+    background-color: red;
+  }
+  nav .nav-holder .bars {
+    display: block;
+    z-index: 99;
+  }
+  nav .nav-holder .links {
+    width: 100vw;
+    height: 50vh;
+    opacity: 0;
+    margin-left: -10px;
+    flex-direction: column;
+    transition: height 0.4s, opacity 0.4s ease-in;
+    background-color: chartreuse;
+  }
+}
 footer {
   height: 60px;
   margin-top: -70px;
@@ -173,7 +234,7 @@ footer .socials .insta {
   background-color: #ffd972;
   border-radius: 180px;
   position: absolute;
-  z-index: 99;
+  z-index: 50;
   display: flex;
 }
 .home-content .home-hero .home-text .big-circle .big-text h1 {
@@ -215,9 +276,14 @@ footer .socials .insta {
   line-height: 12px;
 }
 
+@media only screen and (max-width: 960px) {
+  .big-circle {
+    z-index: 50;
+  }
+}
 .browse-content .browse-hero {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   background-image: linear-gradient(to right, rgba(167, 232, 189, 0.8), rgba(167, 232, 189, 0.8)), url(../images/recipe-hero.jpg);
   background-position: center;
   background-size: cover;
