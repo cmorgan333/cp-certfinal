@@ -76,6 +76,7 @@ $(".links a").click(function (e) {
 
 // ===DOCUMENT READY===//
 $(document).ready(function() {
-    initURLListener();
     initListeners();
+    initURLListener();
+  
 });

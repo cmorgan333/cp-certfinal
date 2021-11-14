@@ -57,10 +57,12 @@ p {
 }
 nav {
   width: 100vw;
+  height: 100px;
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 99;
 }
 nav .logo {
   width: 168px;
@@ -72,10 +74,10 @@ nav .logo {
   background-repeat: no-repeat;
 }
 nav .nav-holder {
+  width: 600px;
   display: flex;
   top: 10px;
   justify-content: space-between;
-  z-index: 99;
 }
 nav .nav-holder .bars {
   position: absolute;
@@ -110,8 +112,9 @@ nav .nav-holder .links {
   justify-content: space-evenly;
   align-items: center;
   transition: height 0.4s, opacity 0.4s ease-in;
+  z-index: 99;
 }
-nav .nav-holder a {
+nav .nav-holder .links a {
   font-family: Caveat Regular;
   font-size: 25px;
   color: #000;
@@ -119,7 +122,7 @@ nav .nav-holder a {
   letter-spacing: 2.5px;
 }
 nav .nav-holder .links.active {
-  height: 60vh;
+  width: 600px;
   opacity: 1;
 }
 nav .nav-holder .your {
@@ -140,19 +143,15 @@ nav button {
 }
 
 @media only screen and (max-width: 960px) {
-  nav {
-    display: flex;
-    z-index: 99;
-  }
   nav .logo {
     margin-top: 10px;
   }
   nav .nav-holder {
     position: absolute;
-    height: 60vh;
     top: 55px;
     right: 10px;
     width: 100vw;
+    z-index: 99;
   }
   nav .nav-holder .bars {
     display: block;
@@ -161,8 +160,9 @@ nav button {
   nav .nav-holder .links {
     width: 100vw;
     height: 50vh;
-    margin-top: 20px;
+    margin-top: 40px;
     opacity: 0;
+    right: 10px;
     flex-direction: column;
     transition: height 0.4s, opacity 0.4s ease-in;
     background-color: #f25c54;
@@ -216,7 +216,32 @@ footer .socials .insta {
   background-image: url(../images/socials/insta.png);
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 1240px) {
+  footer .footer-container {
+    min-height: 20px;
+  }
+  footer .footer-container .misc {
+    width: 600px;
+    min-height: 5px;
+    margin-right: 30px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  footer .footer-container {
+    min-height: 20px;
+  }
+  footer .footer-container .misc {
+    width: 450px;
+    padding-right: 30px;
+    min-height: 5px;
+    margin-right: 30px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 768px) {
   footer {
     font-size: 10px;
     display: flex;
