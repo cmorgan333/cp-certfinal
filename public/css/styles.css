@@ -169,7 +169,7 @@ nav button {
   }
 }
 footer {
-  height: 60px;
+  min-height: 60px;
   margin-top: -70px;
   padding-bottom: 24px;
   font-family: LatoItalic;
@@ -180,12 +180,17 @@ footer {
   justify-content: space-between;
   z-index: 99;
 }
-footer .copyright {
+footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 1100px;
+}
+footer .footer-container .copyright {
   width: 266px;
   height: 18px;
   margin-left: 40px;
 }
-footer .misc {
+footer .footer-container .misc {
   width: 645px;
   display: flex;
   align-items: center;
@@ -211,6 +216,41 @@ footer .socials .insta {
   background-image: url(../images/socials/insta.png);
 }
 
+@media only screen and (max-width: 960px) {
+  footer {
+    font-size: 10px;
+    display: flex;
+    margin-left: 20px;
+  }
+  footer .footer-container {
+    width: 300px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+    min-height: 50px;
+    display: block;
+  }
+  footer .footer-container .copyright {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+  footer .footer-container .misc {
+    display: flex;
+    justify-content: space-evenly;
+    min-height: 20px;
+    width: 400px;
+    flex-wrap: wrap;
+    padding-left: 80px;
+    padding-right: 80px;
+    line-height: 20px;
+  }
+  footer .socials {
+    width: 50px;
+    margin-left: 30px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .home-content .home-hero {
   width: 100vw;
   height: 100vh;
