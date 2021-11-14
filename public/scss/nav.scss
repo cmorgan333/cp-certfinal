@@ -103,9 +103,12 @@ nav {
 		// width: 100vw;
 		display: flex;
 		z-index: 99;
+		.logo {
+			margin-top: 10px;
+		}
 		.nav-holder {
 			position: absolute;
-			height: 50vh;
+			height: 60vh;
 			top: 55px;
 			// left: 100px;
 			right: 10px;
@@ -119,8 +122,8 @@ nav {
 			.links {
 				width: 100vw;
 				height: 50vh;
+				margin-top: 20px;
 				opacity: 0;
-
 				flex-direction: column;
 				transition: height .4s, opacity .4s ease-in;
 				background-color: rgba(242, 92, 84, 1);
