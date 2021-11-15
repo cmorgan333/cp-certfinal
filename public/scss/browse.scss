@@ -26,7 +26,7 @@
 
 		.recipe-box {
 			width: 524px;
-			height: 263px;
+			min-height: 263px;
 			margin-bottom: 50px;
 			display: flex;
 
@@ -121,6 +121,29 @@
 				width: 524px;
 				flex-wrap: wrap;
 				margin: 200px auto;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 650px) {
+	.browse-content {
+		.browse-hero {
+			.recipe-container {
+				width: 298px;
+				.recipe-box {
+					width: 298px;
+					min-height: 200px;
+					display: flex;
+					flex-wrap: wrap;
+					.recipe-image {
+						width: 298px;
+						min-height: 149px;
+					}
+					.recipe-description {
+						width: 298px;
+						min-height: 169px;
+					}
+				}
 			}
 		}
 	}

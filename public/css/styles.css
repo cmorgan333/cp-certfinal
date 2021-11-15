@@ -370,7 +370,7 @@ footer .socials .insta {
 }
 .browse-content .browse-hero .recipe-box {
   width: 524px;
-  height: 263px;
+  min-height: 263px;
   margin-bottom: 50px;
   display: flex;
 }
@@ -456,6 +456,25 @@ footer .socials .insta {
     width: 524px;
     flex-wrap: wrap;
     margin: 200px auto;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .browse-content .browse-hero .recipe-container {
+    width: 298px;
+  }
+  .browse-content .browse-hero .recipe-container .recipe-box {
+    width: 298px;
+    min-height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .browse-content .browse-hero .recipe-container .recipe-box .recipe-image {
+    width: 298px;
+    min-height: 149px;
+  }
+  .browse-content .browse-hero .recipe-container .recipe-box .recipe-description {
+    width: 298px;
+    min-height: 169px;
   }
 }
 .login-content {
