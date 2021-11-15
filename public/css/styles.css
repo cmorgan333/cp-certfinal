@@ -794,6 +794,44 @@ button {
   height: 42px;
 }
 
+@media only screen and (max-width: 1225px) {
+  .your-content .your-hero .your-container {
+    display: flex;
+  }
+  .your-content .your-hero .your-container h1 {
+    padding-left: 30px;
+  }
+  .your-content .your-hero .your-container .your-box {
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .your-content .your-hero .your-container {
+    display: flex;
+  }
+  .your-content .your-hero .your-container h1 {
+    padding-left: 50px;
+    padding-bottom: 30px;
+  }
+  .your-content .your-hero .your-container .your-box {
+    width: 298px;
+    min-height: 150px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .your-content .your-hero .your-container .your-box .your-image {
+    width: 298px;
+    height: 149px;
+  }
+  .your-content .your-hero .your-container .your-box .your-description {
+    width: 298px;
+    min-height: 150px;
+  }
+  .your-content .your-hero .your-container .your-box .edit-delete-container {
+    margin-top: 80px;
+  }
+}
 .fullrecipe-content {
   width: 100vw;
   display: flex;
