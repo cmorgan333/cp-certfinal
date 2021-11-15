@@ -2,7 +2,7 @@
  cp-certfinal
 
 firebase link:
-https://cp-certfinal.web.app/#home
+https://cp-certfinal.web.app/
 
  website link: 
  https://clmorgan.pages.iu.edu/cp-certfinal
