@@ -74,7 +74,7 @@ nav .logo {
   background-repeat: no-repeat;
 }
 nav .nav-holder {
-  width: 600px;
+  width: 800px;
   display: flex;
   top: 10px;
   justify-content: space-between;
@@ -104,7 +104,7 @@ nav .nav-holder .bars.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
 nav .nav-holder .links {
-  width: 600px;
+  width: 800px;
   display: flex;
   height: 70px;
   margin-left: -10px;
@@ -122,11 +122,8 @@ nav .nav-holder .links a {
   letter-spacing: 2.5px;
 }
 nav .nav-holder .links.active {
-  width: 600px;
+  width: 100%;
   opacity: 1;
-}
-nav .nav-holder .your {
-  display: none;
 }
 nav .nav-holder .active {
   width: 54px;
@@ -142,7 +139,7 @@ nav button {
   box-shadow: 0px 10px 6px #00000029;
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 1050px) {
   nav .logo {
     margin-top: 10px;
   }
@@ -634,7 +631,6 @@ button {
 @media only screen and (max-width: 1255px) {
   .create-content .field-container {
     width: 558px;
-    background-color: chartreuse;
   }
   .create-content .field-container .create-button {
     margin: 150px auto;
@@ -650,6 +646,35 @@ button {
 
   .input-holder .add {
     left: 520px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .create-content .field-container {
+    width: 284px;
+  }
+  .create-content .field-container .attach {
+    width: 92px;
+    height: 33px;
+    right: 95px;
+    font-size: 12px;
+  }
+  .create-content .field-container .create-button {
+    margin: 150px auto;
+    margin-bottom: 100px;
+  }
+  .create-content .field-container .enter {
+    margin-top: 150px;
+  }
+  .create-content .field-container input {
+    width: 284px;
+  }
+  .create-content .field-container .create-button {
+    width: 283px;
+    height: 52px;
+  }
+
+  .input-holder .add {
+    left: 245px;
   }
 }
 .your-content .your-hero {
@@ -928,4 +953,54 @@ button {
   font-size: 25px;
   margin-bottom: 60px;
   margin-left: 275px;
+}
+
+@media only screen and (max-width: 1255px) {
+  .editrecipe-content .field-container {
+    width: 558px;
+  }
+  .editrecipe-content .field-container .submit-button {
+    margin: 150px auto;
+    margin-left: 70px;
+    margin-bottom: 100px;
+  }
+  .editrecipe-content .field-container .enter {
+    margin-top: 150px;
+  }
+  .editrecipe-content .field-container input {
+    width: 558px;
+  }
+
+  .input-holder .add {
+    left: 520px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .editrecipe-content .field-container {
+    width: 284px;
+  }
+  .editrecipe-content .field-container .attach {
+    width: 92px;
+    height: 33px;
+    right: 95px;
+    font-size: 12px;
+  }
+  .editrecipe-content .field-container .submit-button {
+    margin: 150px auto;
+    margin-bottom: 100px;
+  }
+  .editrecipe-content .field-container .enter {
+    margin-top: 150px;
+  }
+  .editrecipe-content .field-container input {
+    width: 284px;
+  }
+  .editrecipe-content .field-container .submit-button {
+    width: 283px;
+    height: 52px;
+  }
+
+  .input-holder .add {
+    left: 245px;
+  }
 }

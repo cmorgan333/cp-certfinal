@@ -76,3 +76,68 @@
 		margin-left: 275px;
 	}
 }
+
+// ====RESPONSIVENESS===/
+
+@media only screen and (max-width: 1255px) {
+	.editrecipe-content {
+		.field-container {
+			width: 558px;
+
+			.submit-button {
+				margin: 150px auto;
+				margin-left: 70px;
+				margin-bottom: 100px;
+			}
+			.enter {
+				margin-top: 150px;
+			}
+			input {
+				width: 558px;
+			}
+		}
+	}
+	.input-holder {
+		.add {
+			left: 520px;
+		}
+	}
+}
+
+@media only screen and (max-width: 850px) {
+	.editrecipe-content {
+		.field-container {
+			width: 284px;
+
+			.attach {
+				width: 92px;
+				height: 33px;
+				right: 95px;
+				// left: 30px;
+				font-size: 12px;
+			}
+
+			.submit-button {
+				margin: 150px auto;
+				// margin-left: 50px;
+				margin-bottom: 100px;
+			}
+			.enter {
+				margin-top: 150px;
+			}
+			input {
+				width: 284px;
+			}
+
+			.submit-button {
+				width: 283px;
+				height: 52px;
+			}
+		}
+	}
+	.input-holder {
+		.add {
+			left: 245px;
+		}
+	}
+}

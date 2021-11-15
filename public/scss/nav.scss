@@ -18,7 +18,7 @@ nav {
 	}
 
 	.nav-holder {
-		width: 600px;
+		width: 800px;
 		// height: 100vh;
 		// height: 100vh;
 		// left: 300px;
@@ -54,7 +54,7 @@ nav {
 		}
 
 		.links {
-			width: 600px;
+			width: 800px;
 			display: flex;
 			height: 70px;
 			// width: 100vw;
@@ -75,14 +75,15 @@ nav {
 		}
 
 		.links.active {
-			width: 600px;
+			width: 100%;
+			// width: 800px;
 			// width: 600px;
 			// padding-left: 100px;
 			opacity: 1;
 		}
 
 		.your {
-			display: none;
+			// display: none;
 		}
 		.active {
 			width: 54px;
@@ -103,7 +104,7 @@ nav {
 }
 
 // =====RESPONSIVENESS====//
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 1050px) {
 	nav {
 		// height: 100px;
 		// width: 100vw;

@@ -81,7 +81,6 @@
 	.create-content {
 		.field-container {
 			width: 558px;
-			background-color: chartreuse;
 
 			.create-button {
 				margin: 150px auto;
@@ -99,6 +98,44 @@
 	.input-holder {
 		.add {
 			left: 520px;
+		}
+	}
+}
+
+@media only screen and (max-width: 850px) {
+	.create-content {
+		.field-container {
+			width: 284px;
+
+			.attach {
+				width: 92px;
+				height: 33px;
+				right: 95px;
+				// left: 30px;
+				font-size: 12px;
+			}
+
+			.create-button {
+				margin: 150px auto;
+				// margin-left: 50px;
+				margin-bottom: 100px;
+			}
+			.enter {
+				margin-top: 150px;
+			}
+			input {
+				width: 284px;
+			}
+
+			.create-button {
+				width: 283px;
+				height: 52px;
+			}
+		}
+	}
+	.input-holder {
+		.add {
+			left: 245px;
 		}
 	}
 }
