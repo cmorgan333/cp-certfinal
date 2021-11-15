@@ -111,3 +111,17 @@
 		}
 	}
 }
+
+@media only screen and (max-width: 1200px) {
+	.browse-content {
+		.browse-hero {
+			height: 100%;
+			display: flex;
+			.recipe-container {
+				width: 524px;
+				flex-wrap: wrap;
+				margin: 200px auto;
+			}
+		}
+	}
+}

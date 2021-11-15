@@ -447,6 +447,17 @@ footer .socials .insta {
   font-size: 10px;
 }
 
+@media only screen and (max-width: 1200px) {
+  .browse-content .browse-hero {
+    height: 100%;
+    display: flex;
+  }
+  .browse-content .browse-hero .recipe-container {
+    width: 524px;
+    flex-wrap: wrap;
+    margin: 200px auto;
+  }
+}
 .login-content {
   height: 100vh;
   width: 100vw;
