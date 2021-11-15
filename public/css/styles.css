@@ -179,6 +179,7 @@ footer {
   align-items: center;
   justify-content: space-between;
   z-index: 99;
+  margin-bottom: 50px;
 }
 footer .footer-container {
   display: flex;
@@ -486,7 +487,7 @@ footer .socials .insta {
 }
 .login-content .login-create-container {
   width: 710px;
-  height: 455px;
+  min-height: 455px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -542,6 +543,23 @@ button {
   font-size: 25px;
 }
 
+@media only screen and (max-width: 768px) {
+  .login-content {
+    height: 100%;
+  }
+  .login-content .login-create-container {
+    width: 207px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+  .login-content .login-create-container .login-box {
+    margin-bottom: 150px;
+  }
+  .login-content .login-create-container .create-box {
+    margin-bottom: 200px;
+  }
+}
 .create-content {
   width: 100vw;
   display: flex;
