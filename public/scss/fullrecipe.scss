@@ -92,12 +92,28 @@
 			margin-top: 60px;
 			margin-bottom: 120px;
 		}
+		.side-text {
+			width: 216px;
+			height: 30px;
+			position: absolute;
+			font-size: 25px;
+			font-family: $font3;
+			writing-mode: vertical-rl;
+			transform: rotate(180deg);
+			top: 355px;
+			left: 300px;
+			width: 94px;
+			height: 347px;
+			text-align: left;
+			z-index: 99;
+			background-color: hotpink;
+		}
 	}
 }
 
 // ======RESPONSIVENESS======//
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 1200px) {
 	.fullrecipe-content {
 		.fullrecipe-container {
 			width: 468px;

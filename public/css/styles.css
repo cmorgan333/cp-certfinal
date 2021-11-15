@@ -168,7 +168,6 @@ nav button {
 footer {
   min-height: 60px;
   margin-top: -70px;
-  padding-bottom: 24px;
   font-family: LatoItalic;
   color: #393939;
   font-size: 15px;
@@ -624,8 +623,12 @@ button {
   background-color: #efa7a7;
   font-family: Caveat Regular;
   font-size: 25px;
+  margin-top: 100px;
   margin-bottom: 60px;
   margin-left: 275px;
+}
+.create-content .enter {
+  margin-top: 100px;
 }
 
 @media only screen and (max-width: 1255px) {
@@ -921,8 +924,24 @@ button {
   margin-top: 60px;
   margin-bottom: 120px;
 }
+.fullrecipe-content .fullrecipe-container .side-text {
+  width: 216px;
+  height: 30px;
+  position: absolute;
+  font-size: 25px;
+  font-family: LatoBlack;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  top: 355px;
+  left: 300px;
+  width: 94px;
+  height: 347px;
+  text-align: left;
+  z-index: 99;
+  background-color: hotpink;
+}
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 1200px) {
   .fullrecipe-content .fullrecipe-container {
     width: 468px;
     min-height: 400px;
