@@ -10,7 +10,7 @@
 
 		.image-descript {
 			width: 955px;
-			height: 422px;
+			min-height: 422px;
 			margin-top: 250px;
 			display: flex;
 			justify-content: space-between;
@@ -91,6 +91,62 @@
 			height: 42px;
 			margin-top: 60px;
 			margin-bottom: 120px;
+		}
+	}
+}
+
+// ======RESPONSIVENESS======//
+
+@media only screen and (max-width: 786px) {
+	.fullrecipe-content {
+		.fullrecipe-container {
+			width: 468px;
+			min-height: 400px;
+
+			.image-descript {
+				width: 468px;
+				display: block;
+				.fullrecipe-image {
+					width: 468px;
+					height: 421px;
+				}
+				.fullrecipe-description {
+					width: 455px;
+					.descript {
+						margin-top: 30px;
+					}
+				}
+			}
+			.instructions-container {
+				width: 456px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.fullrecipe-content {
+		.fullrecipe-container {
+			width: 251px;
+			min-height: 200px;
+
+			.image-descript {
+				width: 251px;
+				display: block;
+				.fullrecipe-image {
+					width: 251px;
+					height: 226px;
+				}
+				.fullrecipe-description {
+					width: 251px;
+					.descript {
+						margin-top: 30px;
+					}
+				}
+			}
+			.instructions-container {
+				width: 251px;
+			}
 		}
 	}
 }
