@@ -631,6 +631,27 @@ button {
   margin-left: 275px;
 }
 
+@media only screen and (max-width: 1255px) {
+  .create-content .field-container {
+    width: 558px;
+    background-color: chartreuse;
+  }
+  .create-content .field-container .create-button {
+    margin: 150px auto;
+    margin-left: 70px;
+    margin-bottom: 100px;
+  }
+  .create-content .field-container .enter {
+    margin-top: 150px;
+  }
+  .create-content .field-container input {
+    width: 558px;
+  }
+
+  .input-holder .add {
+    left: 520px;
+  }
+}
 .your-content .your-hero {
   width: 100vw;
   height: 100vh;
