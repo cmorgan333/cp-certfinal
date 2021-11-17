@@ -45,6 +45,7 @@ var RECIPES = [
     },
 ];
 
+var userExists = false;
 
 
 function changeRoute() {
@@ -74,9 +75,60 @@ $(".links a").click(function (e) {
 // ====OBJECTS====//
 
 
+// =====STATE CHANGE====//
+function initFirebase() {
+    firebase.auth().onAuthStateChanged((user) => {
+        if(user){
+console.log("auth change logged in");
+$(".name").html("Carrie");
+$(".view").prop("disabled", false);
+userExists = true;
+        } else{
+            console.log("auth changed logged out");
+            $(".name").html("");
+            $(".view").prop("disabled", true);
+            userExists = false;
+        }
+    });
+}
+
+function signOut() { 
+    firebase
+    .auth()
+    .signOut()
+    .then(() => {
+      console.log("logged out");
+    })
+    .catch((error) => {
+      console.log("Error signing out");
+    });
+}
+
+// =====ANONYMOUS SIGN-IN====//
+function signIn() {
+    firebase.auth().signInAnonymously()
+  .then(() => {
+    console.log("logged in");
+  })
+  .catch((error) => {
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    console.log("Error signing in " + errorMessage);
+  });
+}
+
 // ===DOCUMENT READY===//
 $(document).ready(function() {
-    initListeners();
-    initURLListener();
+    try {
+        let app = firebase.app();
+        initFirebase();
+        // signInAnon();
+        initListeners();
+        initURLListener();
+    }catch(error){
+        console.log("error ", error);
+    }
+  
+    
   
 });
