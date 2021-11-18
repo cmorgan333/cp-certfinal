@@ -81,8 +81,8 @@ function initFirebase() {
     firebase.auth().onAuthStateChanged((user) => {
         if(user){
 console.log("auth change logged in");
-// $(".loginbtn").css("display", "none");
-// $(".logoutbtn").css("display");
+$(".loginbtn").css("display", "none");
+$(".logoutbtn").css("display");
 
 if(user.displayName){
     $(".name").html(user.displayName);
@@ -90,15 +90,13 @@ if(user.displayName){
 }  
 
 $(".view").prop("disabled", false);
-$(".logoutbtn").prop("display", true);
+$(".logoutbtn").css("display", true);
 userExists = true;
 
-$(".loginbtn").css("display", "none");
-$(".logoutbtn").css("display");
+$(".loginbtn").css("display");
+$(".logoutbtn").css("display", "none");
             $(".createbtn").css("display");
             $(".your").css("display");
-
-
 
 
         } else{
