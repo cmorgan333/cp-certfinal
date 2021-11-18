@@ -108,7 +108,7 @@ $(".logoutbtn").css("display");
 
             $(".accountLogin").click(function(){
               $(".loginbtn").hide();
-              $(".logoutbtn").show();
+              $(".logoutbtn, .createbtn, .your").show();
             });
 
         } else{
