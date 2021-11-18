@@ -104,7 +104,31 @@ function signOut() {
     });
 }
 
-// =====ANONYMOUS SIGN-IN====//
+// ===SIGN-IN====//
+function createAccount() {
+   
+    let fName = $("#fName").val();
+    let lName = $("#lName").val();
+    let createEmail = $("#createEmail").val();
+    let createPassword = $("#createPassword").val();
+    let fullName = $(fName + " " + lName);
+
+    console.log("create " + fName + " " + lName + " " + createEmail + " " + createPassword);
+
+    // ===FBASE AUTH USERNAME/PASSWORD//
+    firebase.auth().createUserWithEmailAndPassword(createEmail, createPassword)
+  .then((userCredential) => {
+    console.log('created');
+    var user = userCredential.user;
+    // ...
+  })
+  .catch((error) => {
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    console.log('create error ' + errorMessage);
+  });
+}
+
 function signIn() {
     firebase.auth().signInAnonymously()
   .then(() => {

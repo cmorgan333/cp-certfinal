@@ -486,14 +486,12 @@ footer .socials .insta {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  background-color: hotpink;
 }
 .login-content .login-create-container .login-box {
   width: 210px;
   height: 280px;
   margin-top: 100px;
   display: block;
-  background-color: teal;
 }
 .login-content .login-create-container h1 {
   font-family: LatoBlack;
@@ -507,14 +505,14 @@ footer .socials .insta {
   margin-bottom: 51px;
   border-bottom: 3px solid #000;
   background-color: #ffd972;
-  font-family: LatoRegular;
+  font-family: LatoBlack;
   font-size: 12px;
   color: #000;
+  letter-spacing: 2px;
 }
 .login-content .login-create-container .create-box {
   width: 250px;
   height: 450px;
-  background-color: yellowgreen;
 }
 .login-content .login-create-container .create-box h1 {
   font-family: LatoBlack;
