@@ -81,9 +81,15 @@ function initFirebase() {
     firebase.auth().onAuthStateChanged((user) => {
         if(user){
 console.log("auth change logged in");
+// $("button").removeClass(".loginbtn");
 if(user.displayName){
     $(".name").html(user.displayName);
+    
 }
+
+// $(".loginbtn").display("none", true);
+
+       
 
 $(".view").prop("disabled", false);
 userExists = true;
@@ -120,6 +126,8 @@ function login(){
     var user = userCredential.user;
     // ...
     console.log("logged in");
+    $("#loginEmail").val("");
+   $("#loginPassword").val("");
   })
   .catch((error) => {
     var errorCode = error.code;
@@ -150,6 +158,10 @@ function createAccount() {
     });
     userFullName = fullName;
     $(".name").html(userFullName);
+    $("#fName").val("");
+    $("#lName").val("");
+    $("#createEmail").val("");
+    $("#createPassword").val("");
   })
   .catch((error) => {
     var errorCode = error.code;
