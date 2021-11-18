@@ -86,7 +86,9 @@ console.log("auth change logged in");
 
 if(user.displayName){
     $(".name").html(user.displayName);
-    
+    $(".loginbtn").css("display", "none");
+    $(".logoutbtn").css("display");
+
 }  
 
 $(".view").prop("disabled", false);
@@ -99,7 +101,15 @@ $(".logoutbtn").css("display");
             $(".your").css("display");
 
 
+            $(".logoutbtn").click(function(){
+              $(this).hide();
+              $(".loginbtn").show();
+            });
 
+            $(".accountLogin").click(function(){
+              $(".loginbtn").hide();
+              $(".logoutbtn").show();
+            });
 
         } else{
             console.log("auth changed logged out");
@@ -196,7 +206,9 @@ function signIn() {
     console.log("logged in");
     $(".loginbtn").css("display", "none");
    $(".logoutbtn").css("display");
+
   })
+
   .catch((error) => {
     var errorCode = error.code;
     var errorMessage = error.message;
