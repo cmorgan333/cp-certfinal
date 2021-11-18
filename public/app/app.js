@@ -87,16 +87,20 @@ console.log("auth change logged in");
 if(user.displayName){
     $(".name").html(user.displayName);
     
-}  
-
+    // $("button").click(function(){
+    
+    //     $(".accountLogin").toggleClass(".logoutbtn");
+      };
+}
+    }  
+  }
 $(".view").prop("disabled", false);
-$(".logoutbtn").prop("display", true);
 userExists = true;
 
-$(".loginbtn").css("display", "none");
 $(".logoutbtn").css("display");
-            $(".createbtn").css("display");
-            $(".your").css("display");
+$(".loginbtn").css("display", "none");
+$(".createbtn").css("display");
+$(".your").css("display");
 
 
 
@@ -106,8 +110,9 @@ $(".logoutbtn").css("display");
             $(".name").html("");
             $(".view").prop("disabled", true);
 
-            $(".loginbtn").css("display");
+            
 $(".logoutbtn").css("display", "none", true);
+$(".loginbtn").css("display", false);
             userExists = false;
             userFullName = "";
             $(".createbtn").css("display", "none");
@@ -127,8 +132,11 @@ function signOut() {
     .catch((error) => {
       console.log("Error signing out");
     });
-    $(".loginbtn").css("display");
-$(".logoutbtn").css("display", "none");
+
+    
+    $(".logoutbtn").toggleClass(".loginbtn");
+//     $(".loginbtn").css("display");
+// $(".logoutbtn").css("display", "none");
 }
 
 // =====LOGIN====//
@@ -145,8 +153,10 @@ function login(){
     $("#loginEmail").val("");
    $("#loginPassword").val("");
 
-   $(".loginbtn").css("display", "none");
-   $(".logoutbtn").css("display");
+
+
+  //  $(".loginbtn").css("display", "none");
+  //  $(".logoutbtn").css("display");
 
   })
   .catch((error) => {
