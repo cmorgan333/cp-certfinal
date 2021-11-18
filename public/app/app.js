@@ -47,6 +47,7 @@ var RECIPES = [
 
 var userExists = false;
 
+var userFullName = "";
 
 function changeRoute() {
     let hashTag = window.location.hash;
@@ -80,7 +81,10 @@ function initFirebase() {
     firebase.auth().onAuthStateChanged((user) => {
         if(user){
 console.log("auth change logged in");
-$(".name").html("Carrie");
+if (user.displayName) {
+    $(".name").html(user.displayName);
+}
+
 $(".view").prop("disabled", false);
 userExists = true;
         } else{
@@ -88,6 +92,7 @@ userExists = true;
             $(".name").html("");
             $(".view").prop("disabled", true);
             userExists = false;
+            userFullname = "";
         }
     });
 }
@@ -104,7 +109,26 @@ function signOut() {
     });
 }
 
-// ===SIGN-IN====//
+// =====LOGIN====//
+function login(){
+    let loginEmail = $("#loginEmail").val();
+    let loginPassword = $("#loginPassword").val();
+
+    firebase.auth().signInWithEmailAndPassword(loginEmail, loginPassword)
+  .then((userCredential) => {
+    // Signed in
+    var user = userCredential.user;
+    // ...
+    console.log("logged in");
+  })
+  .catch((error) => {
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    console.log("logged in error " + errorMessage);
+  });
+}
+
+// ===CREATE ACCOUNT====//
 function createAccount() {
    
     let fName = $("#fName").val();
@@ -118,9 +142,16 @@ function createAccount() {
     // ===FBASE AUTH USERNAME/PASSWORD//
     firebase.auth().createUserWithEmailAndPassword(createEmail, createPassword)
   .then((userCredential) => {
-    console.log('created');
+    
+
     var user = userCredential.user;
     // ...
+    console.log('created');
+    firebase.auth().currentUser.updateProfile({
+        displayName: fullName,
+    });
+    userFullName = fullName;
+    $(".name").html(userFullName);
   })
   .catch((error) => {
     var errorCode = error.code;
@@ -152,7 +183,4 @@ $(document).ready(function() {
     }catch(error){
         console.log("error ", error);
     }
-  
-    
-  
 });

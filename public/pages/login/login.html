@@ -2,14 +2,16 @@
     <div class="login-create-container">
     <div class="login-box">
         <h1>Login Here!</h1>
-    <!-- <label for="email">Email Address</label> -->
-        <input type="email"  name="email" id="loginE mail" placeholder="Email Address">
-        <input type="password" name="loginPassword" id="login-password" placeholder="Password">
-        <button>Login</button>
+    
+        <!-- ======LOGIN===== -->
+        <input type="email"  name="loginEmail" id="loginEmail" placeholder="Email Address">
+        <input type="password" name="loginPassword" id="loginPassword" placeholder="Password">
+        <button onclick="login()" class="accountLogin">Login</button>
     </div>
     <div class="create-box">
         <div class="create-account">don’t have an account?</div>
         <h1>Sign Up!</h1>
+        <!-- ====CREATE ACCOUNT==== -->
         <input type="text" name="fName" id="fName" placeholder="First Name">
         <input type="text" name="lName" id="lName" placeholder="Last Name">
         <input type="email" name="email" id="createEmail" placeholder="Email Address">
