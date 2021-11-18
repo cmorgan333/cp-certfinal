@@ -95,21 +95,23 @@ $(".view").prop("disabled", false);
 $(".logoutbtn").prop("display", true);
 userExists = true;
 
-$(".loginbtn").css("display", "none");
-$(".logoutbtn").css("display");
+// $(".loginbtn").css("display", "none");
+// $(".logoutbtn").css("display");
             $(".createbtn").css("display");
             $(".your").css("display");
 
+
+            $(".accountLogin").click(function() {
+              $(".loginbtn").hide();
+              $(".logoutbtn").show();
+            });
 
             $(".logoutbtn").click(function(){
               $(this).hide();
               $(".loginbtn").show();
             });
 
-            $(".accountLogin").click(function(){
-              $(".loginbtn").hide();
-              $(".logoutbtn, .createbtn, .your").show();
-            });
+           
 
         } else{
             console.log("auth changed logged out");
