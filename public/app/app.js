@@ -81,23 +81,24 @@ function initFirebase() {
     firebase.auth().onAuthStateChanged((user) => {
         if(user){
 console.log("auth change logged in");
-// $("button").removeClass(".loginbtn");
+// $(".loginbtn").css("display", "none");
+// $(".logoutbtn").css("display");
+
 if(user.displayName){
     $(".name").html(user.displayName);
     
-}
-
-
-
-
-       
+}  
 
 $(".view").prop("disabled", false);
+$(".logoutbtn").prop("display", true);
 userExists = true;
+
 $(".loginbtn").css("display", "none");
 $(".logoutbtn").css("display");
-$(".createbtn").css("display");
-$(".your").css("display");
+            $(".createbtn").css("display");
+            $(".your").css("display");
+
+
 
 
         } else{
@@ -111,15 +112,6 @@ $(".logoutbtn").css("display", "none", true);
             userFullName = "";
             $(".createbtn").css("display", "none");
             $(".your").css("display", "none");
-
-            // function initListeners() {
-            //     $(".logoutbtn").click(function (e) {
-            //         $(".logoutbtn").toggleClass(".loginbtn");
-                   
-                // });
-            
-           
-            // }
             
         }
     });
@@ -153,7 +145,9 @@ function login(){
     $("#loginEmail").val("");
    $("#loginPassword").val("");
 
-   
+   $(".loginbtn").css("display", "none");
+   $(".logoutbtn").css("display");
+
   })
   .catch((error) => {
     var errorCode = error.code;
@@ -200,6 +194,8 @@ function signIn() {
     firebase.auth().signInAnonymously()
   .then(() => {
     console.log("logged in");
+    $(".loginbtn").css("display", "none");
+   $(".logoutbtn").css("display");
   })
   .catch((error) => {
     var errorCode = error.code;
