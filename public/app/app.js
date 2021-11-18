@@ -81,7 +81,7 @@ function initFirebase() {
     firebase.auth().onAuthStateChanged((user) => {
         if(user){
 console.log("auth change logged in");
-if (user.displayName) {
+if(user.displayName){
     $(".name").html(user.displayName);
 }
 
@@ -92,7 +92,7 @@ userExists = true;
             $(".name").html("");
             $(".view").prop("disabled", true);
             userExists = false;
-            userFullname = "";
+            userFullName = "";
         }
     });
 }
@@ -135,15 +135,13 @@ function createAccount() {
     let lName = $("#lName").val();
     let createEmail = $("#createEmail").val();
     let createPassword = $("#createPassword").val();
-    let fullName = $(fName + " " + lName);
+    let fullName = fName + " " + lName;
 
     console.log("create " + fName + " " + lName + " " + createEmail + " " + createPassword);
 
     // ===FBASE AUTH USERNAME/PASSWORD//
     firebase.auth().createUserWithEmailAndPassword(createEmail, createPassword)
   .then((userCredential) => {
-    
-
     var user = userCredential.user;
     // ...
     console.log('created');
