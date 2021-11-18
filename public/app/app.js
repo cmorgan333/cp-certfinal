@@ -87,18 +87,40 @@ if(user.displayName){
     
 }
 
-// $(".loginbtn").display("none", true);
+
+
 
        
 
 $(".view").prop("disabled", false);
 userExists = true;
+$(".loginbtn").css("display", "none");
+$(".logoutbtn").css("display");
+$(".createbtn").css("display");
+$(".your").css("display");
+
+
         } else{
             console.log("auth changed logged out");
             $(".name").html("");
             $(".view").prop("disabled", true);
+
+            $(".loginbtn").css("display");
+$(".logoutbtn").css("display", "none", true);
             userExists = false;
             userFullName = "";
+            $(".createbtn").css("display", "none");
+            $(".your").css("display", "none");
+
+            // function initListeners() {
+            //     $(".logoutbtn").click(function (e) {
+            //         $(".logoutbtn").toggleClass(".loginbtn");
+                   
+                // });
+            
+           
+            // }
+            
         }
     });
 }
@@ -113,6 +135,8 @@ function signOut() {
     .catch((error) => {
       console.log("Error signing out");
     });
+    $(".loginbtn").css("display");
+$(".logoutbtn").css("display", "none");
 }
 
 // =====LOGIN====//
@@ -128,6 +152,8 @@ function login(){
     console.log("logged in");
     $("#loginEmail").val("");
    $("#loginPassword").val("");
+
+   
   })
   .catch((error) => {
     var errorCode = error.code;
