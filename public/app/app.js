@@ -81,23 +81,23 @@ function initFirebase() {
     firebase.auth().onAuthStateChanged((user) => {
         if(user){
 console.log("auth change logged in");
-// $("button").removeClass(".loginbtn");
 if(user.displayName){
-    $(".name").html(user.displayName);
-    
-}
-
-
-
-
-       
+    $(".name").html(user.displayName);   
+};
+      
 
 $(".view").prop("disabled", false);
 userExists = true;
-$(".loginbtn").css("display", "none");
+
+
+    // $(".loginbtn").toggleClass(".logoutbtn");
+
 $(".logoutbtn").css("display");
 $(".createbtn").css("display");
 $(".your").css("display");
+
+
+
 
 
         } else{
@@ -105,22 +105,19 @@ $(".your").css("display");
             $(".name").html("");
             $(".view").prop("disabled", true);
 
-            $(".loginbtn").css("display");
-$(".logoutbtn").css("display", "none", true);
-            userExists = false;
-            userFullName = "";
-            $(".createbtn").css("display", "none");
-            $(".your").css("display", "none");
-
-            // function initListeners() {
-            //     $(".logoutbtn").click(function (e) {
-            //         $(".logoutbtn").toggleClass(".loginbtn");
-                   
-                // });
-            
+            $(".logoutbtn").click(function(e) {
+                $(".logoutbtn").toggleClass(".loginbtn");
+                $(".createbtn").css("display", "none");
+                $(".your").css("display", "none");
+                })
            
-            // }
-            
+            // $(".loginbtn").css("display");
+            // $(".logoutbtn").css("display", "none");
+           
+
+
+
+     
         }
     });
 }
@@ -152,6 +149,8 @@ function login(){
     console.log("logged in");
     $("#loginEmail").val("");
    $("#loginPassword").val("");
+
+ 
 
    
   })
