@@ -101,31 +101,7 @@ nav {
 		border: none;
 		box-shadow: 0px 10px 6px #00000029;
 	}
-	.logoutbtn {
-		display: none;
-	}
-	.logoutbtn.active {
-		width: 168px;
-		height: 55px;
-		border-radius: 26px;
-		background-color: #ffd972;
-		font-family: $font2;
-		font-size: 25px;
-		border: none;
-		box-shadow: 0px 10px 6px #00000029;
-	}
-	.loginbtn {
-		display: none;
-	}
-	.loginbtn.active {
-		width: 168px;
-		height: 55px;
-		border-radius: 26px;
-		background-color: #ffd972;
-		font-family: $font2;
-		font-size: 25px;
-		border: none;
-		box-shadow: 0px 10px 6px #00000029;
+	.logout {
 	}
 	.name {
 	}
