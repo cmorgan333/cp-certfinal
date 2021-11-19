@@ -84,6 +84,9 @@ console.log("auth change logged in");
 // $(".loginbtn").css("display", "none");
 // $(".logoutbtn").css("display");
 
+
+
+
 if(user.displayName){
     $(".name").html(user.displayName);
     $(".loginbtn").css("display", "none");
@@ -95,8 +98,18 @@ $(".view").prop("disabled", false);
 // $(".logoutbtn").prop("display", true);
 userExists = true;
 
+$(".accountLogin").click(function(){
+  $(".loginbtn").hide();
+  $(".logoutbtn").show();
+  $(".createbtn").css("display");
+$(".your").css("display");
+});
+
 $(".loginbtn").css("display", "none");
 $(".logoutbtn").css("display");
+
+
+
 
             $(".logoutbtn").click(function(){
               $(this).hide();
@@ -145,6 +158,8 @@ function signOut() {
     });
     $(".loginbtn").css("display");
 $(".logoutbtn").css("display", "none");
+
+
 }
 
 // =====LOGIN====//
@@ -157,12 +172,19 @@ function login(){
     // Signed in
     var user = userCredential.user;
     // ...
+
+    
     console.log("logged in");
     $("#loginEmail").val("");
    $("#loginPassword").val("");
 
-   $(".loginbtn").css("display", "none");
-   $(".logoutbtn").css("display");
+$(".loginbtn").hide();
+$(".logoutbtn").show();
+$(".createbtn").show();
+$(".your").show();
+
+  //  $(".loginbtn").css("display", "none");
+  //  $(".logoutbtn").css("display");
 
   })
   .catch((error) => {
