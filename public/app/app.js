@@ -112,7 +112,7 @@ $(".your").css("display");
 });
 
 $(".createbtn").click(function(){
-  $("span, .name").show();
+  $(".name").show();
 })
 
 // $(".creatbtn").click(function(){
@@ -196,7 +196,7 @@ $(".loginbtn").hide();
 $(".logoutbtn").show();
 $(".createbtn").show();
 $(".your").show();
-$("span, .name").show();
+
 
   //  $(".loginbtn").css("display", "none");
   //  $(".logoutbtn").css("display");
