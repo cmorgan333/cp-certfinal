@@ -92,6 +92,7 @@ nav {
 			// border-bottom: 3px #000 solid;
 		}
 	}
+
 	button {
 		width: 168px;
 		height: 55px;
@@ -105,6 +106,13 @@ nav {
 	.logout {
 	}
 	.name {
+		position: absolute;
+		top: 100px;
+		right: 50px;
+		width: 150px;
+		font-family: $font1;
+		font-size: 25px;
+		margin: 0 auto;
 	}
 }
 

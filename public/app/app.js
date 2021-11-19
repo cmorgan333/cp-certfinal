@@ -91,8 +91,10 @@ if(user.displayName){
     $(".name").html(user.displayName);
     $(".loginbtn").css("display", "none");
     $(".logoutbtn").css("display");
-  
 }  
+
+
+
 
 $(".view").prop("disabled", false);
 // $(".logoutbtn").prop("display", true);
@@ -104,6 +106,10 @@ $(".accountLogin").click(function(){
   $(".createbtn").css("display");
 $(".your").css("display");
 });
+
+// $(".creatbtn").click(function(){
+//   $("span").html(user.displayName);
+// })
 
 $(".loginbtn").css("display", "none");
 $(".logoutbtn").css("display");
@@ -182,6 +188,11 @@ $(".loginbtn").hide();
 $(".logoutbtn").show();
 $(".createbtn").show();
 $(".your").show();
+// $("span").show();
+//     $(".name").show();
+$(".createbtn").click(function(){
+  $("span").show();
+})
 
   //  $(".loginbtn").css("display", "none");
   //  $(".logoutbtn").css("display");
@@ -220,7 +231,15 @@ function createAccount() {
     $("#lName").val("");
     $("#createEmail").val("");
     $("#createPassword").val("");
+
+    $(".loginbtn").hide();
+    $(".logoutbtn").show();
+    $(".createbtn").show();
+    $(".your").show();
   })
+
+  
+
   .catch((error) => {
     var errorCode = error.code;
     var errorMessage = error.message;
@@ -234,6 +253,8 @@ function signIn() {
     console.log("logged in");
     $(".loginbtn").css("display", "none");
    $(".logoutbtn").css("display");
+
+  
 
 
   })
