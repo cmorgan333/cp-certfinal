@@ -88,32 +88,28 @@ if(user.displayName){
     $(".name").html(user.displayName);
     $(".loginbtn").css("display", "none");
     $(".logoutbtn").css("display");
-
+  
 }  
 
 $(".view").prop("disabled", false);
-$(".logoutbtn").prop("display", true);
+// $(".logoutbtn").prop("display", true);
 userExists = true;
 
-// $(".loginbtn").css("display", "none");
-// $(".logoutbtn").css("display");
-            $(".createbtn").css("display");
-            $(".your").css("display");
-
-
-            $(".accountLogin").click(function() {
-              $(".loginbtn").hide();
-              $(".logoutbtn").show();
-            });
+$(".loginbtn").css("display", "none");
+$(".logoutbtn").css("display");
 
             $(".logoutbtn").click(function(){
               $(this).hide();
               $(".loginbtn").show();
             });
 
-           
+            $(".accountLogin").click(function(){
+              $(".loginbtn").hide();
+              $(".logoutbtn").show();
+            });
+          
 
-        } else{
+        } else {
             console.log("auth changed logged out");
             $(".name").html("");
             $(".view").prop("disabled", true);
@@ -122,8 +118,16 @@ userExists = true;
 $(".logoutbtn").css("display", "none", true);
             userExists = false;
             userFullName = "";
+
+          
             $(".createbtn").css("display", "none");
             $(".your").css("display", "none");
+
+
+            // $(".accountLogin").click(function(){
+            //   $(".loginbtn").css(".display", "none");
+            //   $(".logoutbtn").show(".display");
+            //               });
             
         }
     });
@@ -208,6 +212,7 @@ function signIn() {
     console.log("logged in");
     $(".loginbtn").css("display", "none");
    $(".logoutbtn").css("display");
+
 
   })
 
