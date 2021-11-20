@@ -722,22 +722,22 @@ footer .socials .insta {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.your-content .addList {
+.your-content .addRecipe {
   width: 100%;
   height: 50px;
 }
-.your-content .addList #listName {
+.your-content .addRecipe #recipeName {
   width: 525px;
   height: 50px;
   margin-top: 10px;
   border-radius: 26px;
   border: none;
 }
-.your-content .addList ::placeholder {
+.your-content .addRecipe ::placeholder {
   font-size: 20px;
   text-indent: 10px;
 }
-.your-content .addList #button {
+.your-content .addRecipe #button {
   width: 168px;
   height: 50px;
   margin-left: 20px;
