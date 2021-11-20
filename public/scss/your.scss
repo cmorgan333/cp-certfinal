@@ -8,130 +8,161 @@
 		background-size: cover;
 		background-repeat: no-repeat;
 		display: flex;
+	}
 
-		.your-container {
-			width: 1100px;
-			min-height: 200px;
-			margin: 220px auto;
-			display: flex;
-			justify-content: space-between;
-			flex-wrap: wrap;
+	.your-container {
+		width: 1100px;
+		min-height: 200px;
+		margin: 220px auto;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	.addList {
+		width: 100%;
+		height: 50px;
+
+		#listName {
+			width: 525px;
+			height: 50px;
+			margin-top: 10px;
+			border-radius: 26px;
+			border: none;
 		}
-		h1 {
-			width: 100%;
-			font-family: $font1;
+
+		::placeholder {
+			font-size: 20px;
+			text-indent: 10px;
+		}
+
+		#button {
+			width: 168px;
+			height: 50px;
+			margin-left: 20px;
+			border-radius: 26px;
+			background-color: #ffd972;
+			font-family: $font2;
 			font-size: 25px;
+			border: none;
+			box-shadow: 0px 10px 6px #00000029;
+		}
+	}
+
+	h1 {
+		width: 100%;
+		font-family: $font1;
+		font-size: 25px;
+	}
+
+	.your-box {
+		width: 524px;
+		min-height: 263px;
+		margin-bottom: 50px;
+		display: flex;
+
+		.your-image {
+			width: 300px;
+			height: 263px;
+			border-radius: 24px;
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			display: flex;
+			align-items: center;
+			justify-content: center;
 		}
 
-		.your-box {
-			width: 524px;
-			min-height: 263px;
-			margin-bottom: 50px;
-			display: flex;
+		.view {
+			width: 128px;
+			height: 42px;
+		}
 
-			.your-image {
-				width: 300px;
-				height: 263px;
-				border-radius: 24px;
+		.pizza {
+			background-image: url(../images/recipe-pizza.jpg);
+		}
+
+		.your-description {
+			width: 224px;
+			height: 263px;
+			border-radius: 24px;
+			background-color: #ffffff;
+
+			.your-title {
+				width: 140px;
+				border-bottom: 3px solid;
+				margin: 46px auto 21px auto;
+				font-family: $font3;
+				font-size: 15px;
+				letter-spacing: 1.5px;
+			}
+			.your-text {
+				width: 150px;
+				min-height: 100px;
+				margin: 0 auto;
+				letter-spacing: .9px;
+				line-height: 11px;
+				font-family: $font6;
+				font-size: 9px;
+			}
+			.recipe-stats {
+				width: 84px;
+				margin: 0 auto 10px auto;
+				display: flex;
+				justify-content: space-between;
+			}
+			.icon {
+				width: 23px;
+				height: 25px;
 				background-position: center;
 				background-size: cover;
 				background-repeat: no-repeat;
-				display: flex;
-				align-items: center;
-				justify-content: center;
 			}
+			.timer {
+				background-image: url(../images/icons/time.svg);
+			}
+			.meal {
+				background-image: url(../images/icons/servings.svg);
+			}
+			.time {
+				width: 46px;
+				font-family: $font6;
+				font-size: 10px;
+			}
+			.servings {
+				width: 46px;
+				font-family: $font6;
+				font-size: 10px;
+			}
+		}
 
-			.view {
+		.edit-delete-container {
+			position: absolute;
+			width: 300px;
+			height: 42px;
+			top: 650px;
+			display: flex;
+			justify-content: space-around;
+			font-family: $font2;
+			font-size: 20px;
+			.edit {
 				width: 128px;
 				height: 42px;
 			}
-
-			.pizza {
-				background-image: url(../images/recipe-pizza.jpg);
-			}
-
-			.your-description {
-				width: 224px;
-				height: 263px;
-				border-radius: 24px;
-				background-color: #ffffff;
-
-				.your-title {
-					width: 140px;
-					border-bottom: 3px solid;
-					margin: 46px auto 21px auto;
-					font-family: $font3;
-					font-size: 15px;
-					letter-spacing: 1.5px;
-				}
-				.your-text {
-					width: 150px;
-					min-height: 100px;
-					margin: 0 auto;
-					letter-spacing: .9px;
-					line-height: 11px;
-					font-family: $font6;
-					font-size: 9px;
-				}
-				.recipe-stats {
-					width: 84px;
-					margin: 0 auto 10px auto;
-					display: flex;
-					justify-content: space-between;
-				}
-				.icon {
-					width: 23px;
-					height: 25px;
-					background-position: center;
-					background-size: cover;
-					background-repeat: no-repeat;
-				}
-				.timer {
-					background-image: url(../images/icons/time.svg);
-				}
-				.meal {
-					background-image: url(../images/icons/servings.svg);
-				}
-				.time {
-					width: 46px;
-					font-family: $font6;
-					font-size: 10px;
-				}
-				.servings {
-					width: 46px;
-					font-family: $font6;
-					font-size: 10px;
-				}
-			}
-
-			.edit-delete-container {
-				position: absolute;
-				width: 300px;
+			.delete {
+				width: 128px;
 				height: 42px;
-				top: 650px;
-				display: flex;
-				justify-content: space-around;
-				font-family: $font2;
-				font-size: 20px;
-				.edit {
-					width: 128px;
-					height: 42px;
-				}
-				.delete {
-					width: 128px;
-					height: 42px;
-				}
 			}
-			button {
-				width: 168px;
-				height: 55px;
-				border-radius: 26px;
-				background-color: #ffd972;
-				font-family: $font2;
-				font-size: 25px;
-				border: none;
-				box-shadow: 0px 10px 6px #00000029;
-			}
+		}
+		button {
+			width: 168px;
+			height: 55px;
+			border-radius: 26px;
+			background-color: #ffd972;
+			font-family: $font2;
+			font-size: 25px;
+			border: none;
+			box-shadow: 0px 10px 6px #00000029;
 		}
 	}
 }
