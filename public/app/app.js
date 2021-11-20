@@ -46,10 +46,11 @@ var RECIPES = [
 ];
 
 var _db = "";
-
 var userExists = false;
-
 var userFullName = "";
+var _userProfileInfo = {};
+
+
 
 function changeRoute() {
     let hashTag = window.location.hash;
@@ -131,6 +132,7 @@ $(".logoutbtn").css("display");
 
         } else {
           _db = "";
+          _userProfileInfo = {};
             console.log("auth changed logged out");
             $(".name").html("");
             $(".view").prop("disabled", true);
@@ -179,6 +181,22 @@ function login(){
     console.log("logged in");
     $("#loginEmail").val("");
    $("#loginPassword").val("");
+
+   _db
+   .collection("Users")
+   .doc(user.uid)
+   .get()
+   .then((doc) => {
+     console.log(doc.data());
+     _userProfileInfo = doc.data();
+     console.log("login userinfo ", _userProfileInfo);
+   })
+
+   .catch((error) => {
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    console.log("logged in error " + errorMessage);
+  });
 
 $(".loginbtn").hide();
 $(".logoutbtn").show();
@@ -230,6 +248,8 @@ _db.collection("Users")
 .set(userObj)
 .then((doc) => {
   console.log("doc added ");
+  _userProfileInfo = userObj;
+  console.log("create userinfo ", _userProfileInfo);
 })
 
 .catch((error) => {
