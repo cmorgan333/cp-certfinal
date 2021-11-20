@@ -45,6 +45,8 @@ var RECIPES = [
     },
 ];
 
+var _db = "";
+
 var userExists = false;
 
 var userFullName = "";
@@ -80,12 +82,10 @@ $(".links a").click(function (e) {
 function initFirebase() {
     firebase.auth().onAuthStateChanged((user) => {
         if(user){
+          _db = firebase.firestore();
 console.log("auth change logged in");
 // $(".loginbtn").css("display", "none");
 // $(".logoutbtn").css("display");
-
-
-
 
 if(user.displayName){
     $(".name").html(user.displayName);
@@ -94,11 +94,7 @@ if(user.displayName){
     $(".logoutbtn").css("display");
 }  
 
-
-
-
 $(".view").prop("disabled", false);
-
 
 // $(".logoutbtn").prop("display", true);
 userExists = true;
@@ -115,9 +111,6 @@ $(".createbtn").click(function(){
   $(".name").show();
 })
 
-// $(".creatbtn").click(function(){
-//   $("span").html(user.displayName);
-// })
 
 $(".loginbtn").css("display", "none");
 $(".logoutbtn").css("display");
@@ -137,6 +130,7 @@ $(".logoutbtn").css("display");
           
 
         } else {
+          _db = "";
             console.log("auth changed logged out");
             $(".name").html("");
             $(".view").prop("disabled", true);
@@ -150,12 +144,6 @@ $(".logoutbtn").css("display", "none", true);
             $(".createbtn").css("display", "none");
             $(".your").css("display", "none");
 
-
-            // $(".accountLogin").click(function(){
-            //   $(".loginbtn").css(".display", "none");
-            //   $(".logoutbtn").show(".display");
-            //               });
-            
         }
     });
 }
@@ -217,11 +205,18 @@ function createAccount() {
     let createEmail = $("#createEmail").val();
     let createPassword = $("#createPassword").val();
     let fullName = fName + " " + lName;
+    let userObj = {
+      firstName: fName,
+      lastName: lName,
+      createEmail: createEmail,
+      list: [],
+    };
 
     console.log("create " + fName + " " + lName + " " + createEmail + " " + createPassword);
 
     // ===FBASE AUTH USERNAME/PASSWORD//
-    firebase.auth().createUserWithEmailAndPassword(createEmail, createPassword)
+    firebase.auth()
+    .createUserWithEmailAndPassword(createEmail, createPassword)
   .then((userCredential) => {
     var user = userCredential.user;
     // ...
@@ -229,6 +224,21 @@ function createAccount() {
     firebase.auth().currentUser.updateProfile({
         displayName: fullName,
     });
+
+_db.collection("Users")
+.doc(user.uid)
+.set(userObj)
+.then((doc) => {
+  console.log("doc added ");
+})
+
+.catch((error) => {
+  var errorCode = error.code;
+  var errorMessage = error.message;
+  console.log('create error ' + errorMessage);
+});
+
+
     userFullName = fullName;
     $(".name").html(userFullName);
     $("#fName").val("");
