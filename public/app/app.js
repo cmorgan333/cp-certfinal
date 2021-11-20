@@ -79,6 +79,23 @@ $(".links a").click(function (e) {
 // ====OBJECTS====//
 
 
+function addMainList() {
+  let newListName = $("#listName").val();
+  let newListObj = {
+      recipeTitle: newRecipeTitle,
+      recipeThumbImg: newRecipeThumbImg, 
+      recipeFullImg: newRecipeFullImg,
+      recipeBriefDescription: newRecipeBriefDescription,
+      recipeDescription: newRecipeDescription,
+      recipeTime: newRecipeTime,
+      recipeServings: newRecipeServings,
+      recipeIngredients: [],
+      recipeInstructions: newRecipeInstructions,
+  },
+
+  }
+
+
 // =====STATE CHANGE====//
 function initFirebase() {
     firebase.auth().onAuthStateChanged((user) => {
