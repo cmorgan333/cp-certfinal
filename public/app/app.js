@@ -243,49 +243,17 @@ $(".links a").click(function (e) {
 });
 }
 
-// function loadData() {
-//   function loadData() {
-//     $.each(RECIPES, function(index, tool) {
-//         $("#app").append(`<div id="{index} class="your-box">
-//         <div class="your-image pizza">${recipe.newRecipeTitle}
-//             <a href="#fullrecipe">
-//             <button class="view">View</button>
-//          </a>
-//         </div>
-//         <div class="your-description">
-//             <div class="your-title">${recipe.recipeTitle}</div>
-//             <div class="your-text">${recipe.recipeBriefDescription}</div>
-//             <div class="recipe-stats">
-//             <div class="icon timer"></div>
-//             <div class="time">${recipe.recipeTime}</div>
-//          </div>
-//          <div class="recipe-stats">
-//              <div class="icon meal"></div>
-//              <div class="servings">${recipe.recipeServings}</div>
-//           </div>
-//         </div>
-//         <div class="edit-delete-container">
-//             <a href="#editrecipe">
-//         <button class="edit">Edit Recipe</button>
-//      </a>
-//         <button class="delete">Delete</button>
-//      </div>
-//     </div>`);
-//     });
-// }
-
-
 
 // ===I know this is going to be wrong, look at it
-function loadRecipes() {
-  let listString = "<ul>";
-  $.each(_userProfileInfo.recipes, function (index, recipe) {
-    listString += `li id="${idx}" onclick="loadRecipes"(${idx})">${recipe.recipeTitle}
-    <span class="right">Recipes: ${recipe.recipeItems.length}</span></li>`;
-  });
-  listString += "<ul>";
-  $("#app").html(listString);
-}
+// function loadRecipes() {
+//   let listString = "<ul>";
+//   $.each(_userProfileInfo.recipes, function (index, recipe) {
+//     listString += `li id="${idx}" onclick="loadRecipes"(${idx})">${recipe.recipeTitle}
+//     <span class="right">Recipes: ${recipe.recipeItems.length}</span></li>`;
+//   });
+//   listString += "<ul>";
+//   $("#app").html(listString);
+// }
 
 // ====OBJECTS====//
 
@@ -298,8 +266,8 @@ let newRecipeBriefDescription = $("#full-description").val();
 let newRecipeDescription = $("#fulldescription").val();
 let newRecipeTime = $("#recipe-time").val();
 let newRecipeServings = $("#recipe-serve").val();
-let newRecipeIngredient = $("#ingredient").val();
-let newRecipeInstruction = $("#instruction").val();
+let newRecipeIngredient = $("#ingredients").val();
+let newRecipeInstruction = $("#instructions").val();
 
   let newRecipeObj = {
       recipeTitle: newRecipeTitle,
