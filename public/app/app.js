@@ -243,9 +243,38 @@ $(".links a").click(function (e) {
 });
 }
 
-function loadRecipeItems() {
-  
-}
+// function loadData() {
+//   function loadData() {
+//     $.each(RECIPES, function(index, tool) {
+//         $("#app").append(`<div id="{index} class="your-box">
+//         <div class="your-image pizza">${recipe.newRecipeTitle}
+//             <a href="#fullrecipe">
+//             <button class="view">View</button>
+//          </a>
+//         </div>
+//         <div class="your-description">
+//             <div class="your-title">${recipe.recipeTitle}</div>
+//             <div class="your-text">${recipe.recipeBriefDescription}</div>
+//             <div class="recipe-stats">
+//             <div class="icon timer"></div>
+//             <div class="time">${recipe.recipeTime}</div>
+//          </div>
+//          <div class="recipe-stats">
+//              <div class="icon meal"></div>
+//              <div class="servings">${recipe.recipeServings}</div>
+//           </div>
+//         </div>
+//         <div class="edit-delete-container">
+//             <a href="#editrecipe">
+//         <button class="edit">Edit Recipe</button>
+//      </a>
+//         <button class="delete">Delete</button>
+//      </div>
+//     </div>`);
+//     });
+// }
+
+
 
 // ===I know this is going to be wrong, look at it
 function loadRecipes() {
