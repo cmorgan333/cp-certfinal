@@ -157,7 +157,7 @@ var RECIPES = [
   },
   {
      "recipeTitle":"Ch. Chow Mein",
-     "recipeThumbImg":"chowmmeinthumb_300x263.jpg",
+     "recipeThumbImg":"chowmeinthumb_300x263.jpg",
      "recipeFullImg":"recipe-chowmein.jpg",
      "recipeBriefDescription":"A great Chow Mein comes down to the sauce - it takes more than just soy sauce and sugar! Jam packed with a surprising amount of hidden vegetables, customize this Chicken Chow Mein recipe using your protein of choice!",
      "recipeDescription":"A great Chow Mein comes down to the sauce - it takes more than just soy sauce and sugar! Jam packed with a surprising amount of hidden vegetables, customize this Chicken Chow Mein recipe using your protein of choice!",
@@ -242,37 +242,43 @@ $(".links a").click(function (e) {
 
 function loadData(){
 $.each(RECIPES, function(index, recipe){
-$("#app .your-box").append(`
+$("#app .recipe-boxes").append(`
 
 
         <!-- ===RECIPES===== -->
-           <div class="your-box">
-               <div class="your-image pizza">${recipe.recipeThumbImg}
-                   <a href="#fullrecipe">
-                   <button class="view">View</button>
-                </a>
-               </div>
-               <div class="your-description">
-                   <div class="your-title">${recipe.recipeTitle}</div>
-                   <div class="your-text">${recipe.recipeBriefDescription}</div>
-                   <div class="recipe-stats">
-                   <div class="icon timer"></div>
-                   <div class="time">${recipe.recipeTime}</div>
-                </div>
-                <div class="recipe-stats">
-                    <div class="icon meal"></div>
-                    <div class="servings">${recipe.recipeServings}</div>
-                 </div>
-               </div>
-               <div class="edit-delete-container">
-                   <a href="#editrecipe">
-               <button class="edit">Edit Recipe</button>
-            </a>
-               <button class="delete">Delete</button>
-            </div>
-           </div>
-           
-       </div>
+   
+        <div class="your-box">
+        <div class="your-image">
+        <img src="images/pizzaThumbs-assets/${recipe.recipeThumbImg}"
+            <a href="#fullrecipe">
+            <button class="view">View</button>
+         </a>
+         </div>
+        
+        <div class="your-description">
+            <div class="your-title">${recipe.recipeTitle}</div>
+            <div class="your-text">${recipe.recipeBriefDescription}</div>
+            <div class="recipe-stats">
+            <div class="icon timer"></div>
+            <div class="time">${recipe.recipeTime}</div>
+         </div>
+         <div class="recipe-stats">
+             <div class="icon meal"></div>
+             <div class="servings">${recipe.recipeServings}
+             </div>
+          </div>
+        </div>
+       
+        <div class="edit-delete-container">
+            <a href="#editrecipe">
+        <button class="edit">Edit Recipe</button>
+     </a>
+        <button class="delete">Delete</button>
+     </div>
+</div>
+            
+         
+         
 `);
 });
 }

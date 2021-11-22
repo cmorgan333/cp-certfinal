@@ -363,7 +363,7 @@ footer .socials .insta {
 }
 .browse-content .browse-hero .recipe-container {
   width: 1100px;
-  min-height: 200px;
+  min-height: 730px;
   margin: 220px auto;
   display: flex;
   justify-content: space-between;
@@ -707,7 +707,7 @@ footer .socials .insta {
 }
 .your-content .your-hero {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   background-image: linear-gradient(to right, rgba(167, 232, 189, 0.8), rgba(167, 232, 189, 0.8)), url(../images/recipe-hero.jpg);
   background-position: center;
   background-size: cover;
@@ -716,12 +716,15 @@ footer .socials .insta {
 }
 .your-content .your-container {
   width: 1100px;
-  min-height: 200px;
-  margin: 350px auto;
+  min-height: 775px;
+  margin: 200px auto;
+}
+.your-content .recipe-boxes {
+  width: 1100px;
+  min-height: 480px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  background-color: cadetblue;
 }
 .your-content #recipeName {
   width: 525px;
@@ -734,30 +737,24 @@ footer .socials .insta {
   font-size: 20px;
   text-indent: 10px;
 }
-.your-content #button {
-  width: 168px;
-  height: 50px;
-  margin-left: 20px;
-  border-radius: 26px;
-  background-color: #ffd972;
-  font-family: Caveat Regular;
-  font-size: 25px;
-  border: none;
-  box-shadow: 0px 10px 6px #00000029;
-}
 
 h1 {
   width: 100%;
   font-family: Caveat Bold;
   font-size: 25px;
+  display: flex;
+}
+h1 .load-recipes {
+  margin-top: 0;
 }
 
 .your-box {
   width: 524px;
-  min-height: 263px;
+  min-height: 300px;
+  margin-top: 50px;
   margin-bottom: 50px;
   display: flex;
-  background-color: coral;
+  position: relative;
 }
 .your-box .your-image {
   width: 300px;
@@ -770,20 +767,27 @@ h1 {
   align-items: center;
   justify-content: center;
 }
+.your-box .your-image img {
+  width: 300px;
+  border-radius: 24px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+}
 .your-box .view {
   width: 128px;
   height: 42px;
+  z-index: 99;
 }
-.your-box .pizza {
-  background-image: url(../images/recipe-pizza.jpg);
-}
-.your-box .your-description {
+
+.your-description {
   width: 224px;
   height: 263px;
   border-radius: 24px;
   background-color: #ffffff;
 }
-.your-box .your-description .your-title {
+.your-description .your-title {
   width: 140px;
   border-bottom: 3px solid;
   margin: 46px auto 21px auto;
@@ -791,7 +795,7 @@ h1 {
   font-size: 15px;
   letter-spacing: 1.5px;
 }
-.your-box .your-description .your-text {
+.your-description .your-text {
   width: 150px;
   min-height: 100px;
   margin: 0 auto;
@@ -800,66 +804,53 @@ h1 {
   font-family: LatoRegular;
   font-size: 9px;
 }
-.your-box .your-description .recipe-stats {
+.your-description .recipe-stats {
   width: 84px;
   margin: 0 auto 10px auto;
   display: flex;
   justify-content: space-between;
 }
-.your-box .your-description .icon {
+.your-description .icon {
   width: 23px;
   height: 25px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.your-box .your-description .timer {
+.your-description .timer {
   background-image: url(../images/icons/time.svg);
 }
-.your-box .your-description .meal {
+.your-description .meal {
   background-image: url(../images/icons/servings.svg);
 }
-.your-box .your-description .time {
+.your-description .time {
   width: 46px;
   font-family: LatoRegular;
   font-size: 10px;
 }
-.your-box .your-description .servings {
+.your-description .servings {
   width: 46px;
   font-family: LatoRegular;
   font-size: 10px;
 }
-.your-box .edit-delete-container {
+
+.edit-delete-container {
   position: absolute;
   width: 300px;
   height: 42px;
-  top: 650px;
+  top: 275px;
   display: flex;
   justify-content: space-around;
   font-family: Caveat Regular;
   font-size: 20px;
 }
-.your-box .edit-delete-container .edit {
+.edit-delete-container .edit {
   width: 128px;
   height: 42px;
 }
-.your-box .edit-delete-container .delete {
+.edit-delete-container .delete {
   width: 128px;
   height: 42px;
-}
-.your-box .addRecipe {
-  width: 100%;
-  height: 50px;
-}
-.your-box .addRecipe button {
-  width: 168px;
-  height: 55px;
-  border-radius: 26px;
-  background-color: #ffd972;
-  font-family: Caveat Regular;
-  font-size: 25px;
-  border: none;
-  box-shadow: 0px 10px 6px #00000029;
 }
 
 @media only screen and (max-width: 1225px) {
@@ -876,6 +867,8 @@ h1 {
 @media only screen and (max-width: 600px) {
   .your-content .your-hero .your-container {
     display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
   }
   .your-content .your-hero .your-container h1 {
     padding-left: 50px;
