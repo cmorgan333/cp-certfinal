@@ -250,7 +250,7 @@ $("#app .recipe-boxes").append(`
 
         <!-- ===RECIPES===== -->
    
-        <div class="your-box">
+        <div id="${index}"" class="your-box">
         <div class="your-image">
         <img src="images/pizzaThumbs-assets/${recipe.recipeThumbImg}"
             <a href="#fullrecipe">
