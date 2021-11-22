@@ -2,6 +2,18 @@
     <div class="your-hero">
         <div class="your-container">
             <h1>Hey <span class="name"></span>, here are your recipes!</h1>
+            <div class="addRecipe">
+   
+                <input type="text" id="recipeName" class="recipeName" placeholder="New Recipe"/>
+                <input 
+                type="submit"
+                name="submit"
+                onclick="addMainRecipe()"
+                value="Create Recipe"
+                id="create-button"
+                class="button"
+                />
+            </div>
          
             <button class="load-recipes" onclick="loadData()">Load Recipes!</button>
 
@@ -17,7 +29,4 @@
 <!-- ===CLEAN UP=== -->
 
 <!-- INGREDIENTS: JUST IN CASE -->
-//     1/4 batch pizza dough </div>
 
-
-Instructions

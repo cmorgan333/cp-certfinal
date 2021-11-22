@@ -310,9 +310,9 @@ function initRecipeListeners() {
     <div class="servings">${RECIPES[recipeIndex].recipeTime}</div>
 </div>
         </div>
-        <div class="ingredient-container">${RECIPES[recipeIndex].recipeIngredients}
+        <div class="ingredient-container">
             <div class="ingred-title">Ingredients:</div>
-            
+            <div class="ingredient">${RECIPES[recipeIndex].recipeIngredients}</div>
         </div>
         <div class="instructions-container">
             <div class="instruct-title">Instructions:</div>
@@ -320,15 +320,22 @@ function initRecipeListeners() {
             <div>  
         </div>
         <button class="edit">Edit Recipe</button>
-    </div>
+        <div class="close">CLOSE</div>
     <div class="side-text"></div>
-</div>
-      `);
+    </div>
+</div>`);
+      addCLoseListener();
 });
 
+}
 // $(".your").click(function(e) {
 //    $("#your").css(".your-content");
 // });
+function addCloseListener(){
+   $(".close").click(function(){
+      $("#app fullrecipe-content").html("");
+      loadData();
+   });
 }
 
 // ===I know this is going to be wrong, look at it
@@ -353,8 +360,8 @@ let newRecipeBriefDescription = $("#full-description").val();
 let newRecipeDescription = $("#fulldescription").val();
 let newRecipeTime = $("#recipe-time").val();
 let newRecipeServings = $("#recipe-serve").val();
-let newRecipeIngredient = $("#ingredients").val();
-let newRecipeInstruction = $("#instructions").val();
+let newRecipeIngredient = $("#ingredient").val();
+let newRecipeInstruction = $("#instruction").val();
 
   let newRecipeObj = {
       recipeTitle: newRecipeTitle,
@@ -364,15 +371,15 @@ let newRecipeInstruction = $("#instructions").val();
       recipeDescription: newRecipeDescription,
       recipeTime: newRecipeTime,
       recipeServings: newRecipeServings,
-      recipeIngredient: [],
-      recipeInstruction: [],
+      recipeIngredients: [],
+      recipeInstructions: [],
   };
 _userProfileInfo.recipes.push(newRecipeObj);
 updateUserInfo(_userProfileInfo);
 
 // ====NEED TO CHANGE TO WHAT MINE IS NAMED
-loadRecipes();
-$("#recipeName").val();
+loadData();
+$("#recipeName").val("");
 
   }
 

@@ -622,19 +622,25 @@ footer .socials .insta {
   font-size: 20px;
   color: #000;
 }
-.create-content .create-button {
+.create-content #recipeName {
+  width: 500px;
+  height: 50px;
+  border-radius: 26px;
+  border: 3px solid #000;
+  margin-top: 100px;
+  margin-left: 240px;
+  text-indent: 10px;
+}
+.create-content #create-button {
   width: 422px;
   height: 52px;
   border-radius: 26px;
   background-color: #efa7a7;
   font-family: Caveat Regular;
   font-size: 25px;
-  margin-top: 100px;
-  margin-bottom: 60px;
+  margin-bottom: 500px;
   margin-left: 275px;
-}
-.create-content .enter {
-  margin-top: 130px;
+  border: none;
 }
 .create-content button {
   width: 168px;
@@ -645,6 +651,9 @@ footer .socials .insta {
   font-size: 25px;
   border: none;
   box-shadow: 0px 10px 6px #00000029;
+}
+.create-content .enter {
+  margin-top: 130px;
 }
 .create-content span .name {
   position: absolute;
@@ -730,6 +739,7 @@ footer .socials .insta {
   width: 525px;
   height: 50px;
   margin-top: 10px;
+  margin-bottom: 20px;
   border-radius: 26px;
   border: none;
 }
@@ -902,16 +912,13 @@ h1 .load-recipes {
   width: 955px;
   min-height: 800px;
   margin: 0 auto;
+  margin-bottom: 400px;
   display: block;
-  background-color: hotpink;
 }
 .fullrecipe-content .image-descript {
   width: 955px;
   min-height: 422px;
   margin-top: 250px;
-  display: flex;
-  justify-content: space-between;
-  background-color: teal;
 }
 .fullrecipe-content .image-descript .fullrecipe-image {
   width: 468px;
@@ -920,10 +927,12 @@ h1 .load-recipes {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  opacity: 1;
 }
 .fullrecipe-content .image-descript .fullrecipe-image img {
   width: 468px;
   height: 422px;
+  opacity: 1;
 }
 .fullrecipe-content .image-descript .fullrecipe-description {
   width: 452px;
@@ -961,7 +970,7 @@ h1 .load-recipes {
 }
 .fullrecipe-content .ingredient-container {
   width: 445px;
-  background-color: yellowgreen;
+  margin-top: 500px;
 }
 .fullrecipe-content .ingredient-container .ingred-title {
   font-family: LatoBlack;
@@ -972,11 +981,11 @@ h1 .load-recipes {
 .fullrecipe-content .ingredient-container .ingredient {
   font-family: Caveat Regular;
   font-size: 20px;
+  margin-top: 20px;
 }
 .fullrecipe-content .instructions-container {
   width: 955px;
   margin-top: 66px;
-  background-color: blue;
 }
 .fullrecipe-content .instructions-container .instruct-title {
   font-family: LatoBlack;
@@ -991,6 +1000,18 @@ h1 .load-recipes {
   height: 42px;
   margin-top: 60px;
   margin-bottom: 120px;
+}
+.fullrecipe-content .close {
+  width: 127px;
+  height: 42px;
+  margin-top: 60px;
+  margin-bottom: 120px;
+  cursor: pointer;
+  background-color: #ffd972;
+  border-radius: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .fullrecipe-content .side-text {
   width: 216px;
