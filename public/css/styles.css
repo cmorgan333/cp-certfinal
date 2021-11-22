@@ -755,6 +755,7 @@ h1 .load-recipes {
   margin-bottom: 50px;
   display: flex;
   position: relative;
+  cursor: pointer;
 }
 .your-box .your-image {
   width: 300px;

@@ -237,13 +237,16 @@ function initListeners() {
 $(".links a").click(function (e) {
     $(".bars").toggleClass("active");
     $(".links").toggleClass("active");
+
 });
 }
+
+// });
+
 
 function loadData(){
 $.each(RECIPES, function(index, recipe){
 $("#app .recipe-boxes").append(`
-
 
         <!-- ===RECIPES===== -->
    
@@ -276,13 +279,19 @@ $("#app .recipe-boxes").append(`
         <button class="delete">Delete</button>
      </div>
 </div>
-            
-         
-         
+                
 `);
 });
+initRecipeListeners();
+
 }
 
+function initRecipeListeners() {
+   $(".your-box").click(function(e) {
+      let recipeID = e.currentTarget.id;
+      console.log(recipeID);
+});
+}
 
 // ===I know this is going to be wrong, look at it
 // function loadRecipes() {
@@ -571,6 +580,7 @@ $(document).ready(function() {
         // signInAnon();
         initListeners();
         initURLListener();
+       
     }catch(error){
         console.log("error ", error);
     }
