@@ -288,9 +288,47 @@ initRecipeListeners();
 
 function initRecipeListeners() {
    $(".your-box").click(function(e) {
-      let recipeID = e.currentTarget.id;
-      console.log(recipeID);
+      let recipeIndex = e.currentTarget.id;
+   // });
+        
+      $("#app .your-content").html(`
+      <div class="fullrecipe-content">
+    <div class="fullrecipe-container" >
+        <div class="image-descript">
+            
+<div class="fullrecipe-image" id="fullrecipe-image">
+<img src="images/${RECIPES[recipeIndex].recipeFullImg}"
+</div>
+<div class="fullrecipe-description">
+    <div class="descript">Description:</div>
+    <div class="fullrecipe-text">
+    ${RECIPES[recipeIndex].recipeBriefDescription}
+    </div>
+    <div class="total-time">Total Time:</div>
+    <div class="time"> ${RECIPES[recipeIndex].recipeTime}</div>
+    <div class="serve">Servings:</div>
+    <div class="servings">${RECIPES[recipeIndex].recipeTime}</div>
+</div>
+        </div>
+        <div class="ingredient-container">${RECIPES[recipeIndex].recipeIngredients}
+            <div class="ingred-title">Ingredients:</div>
+            
+        </div>
+        <div class="instructions-container">
+            <div class="instruct-title">Instructions:</div>
+            <div class="instruction">${RECIPES[recipeIndex].recipeInstructions}
+            <div>  
+        </div>
+        <button class="edit">Edit Recipe</button>
+    </div>
+    <div class="side-text"></div>
+</div>
+      `);
 });
+
+// $(".your").click(function(e) {
+//    $("#your").css(".your-content");
+// });
 }
 
 // ===I know this is going to be wrong, look at it

@@ -900,17 +900,20 @@ h1 .load-recipes {
 }
 .fullrecipe-content .fullrecipe-container {
   width: 955px;
-  min-height: 200px;
+  min-height: 800px;
   margin: 0 auto;
+  display: block;
+  background-color: hotpink;
 }
-.fullrecipe-content .fullrecipe-container .image-descript {
+.fullrecipe-content .image-descript {
   width: 955px;
   min-height: 422px;
   margin-top: 250px;
   display: flex;
   justify-content: space-between;
+  background-color: teal;
 }
-.fullrecipe-content .fullrecipe-container .image-descript .fullrecipe-image {
+.fullrecipe-content .image-descript .fullrecipe-image {
   width: 468px;
   height: 422px;
   background-image: url(../images/recipe-pizza.jpg);
@@ -918,77 +921,84 @@ h1 .load-recipes {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.fullrecipe-content .fullrecipe-container .image-descript .fullrecipe-description {
+.fullrecipe-content .image-descript .fullrecipe-image img {
+  width: 468px;
+  height: 422px;
+}
+.fullrecipe-content .image-descript .fullrecipe-description {
   width: 452px;
   height: 422px;
 }
-.fullrecipe-content .fullrecipe-container .image-descript .fullrecipe-description .descript {
+.fullrecipe-content .image-descript .fullrecipe-description .descript {
   font-family: LatoBlack;
   font-size: 25px;
   margin-bottom: 35px;
 }
-.fullrecipe-content .fullrecipe-container .image-descript .fullrecipe-description .fullrecipe-text {
+.fullrecipe-content .image-descript .fullrecipe-description .fullrecipe-text {
   font-family: Caveat Regular;
   font-size: 20px;
   margin-bottom: 45px;
 }
-.fullrecipe-content .fullrecipe-container .image-descript .fullrecipe-description .total-time {
+.fullrecipe-content .image-descript .fullrecipe-description .total-time {
   font-family: LatoBlack;
   font-size: 20px;
   margin-bottom: 39px;
 }
-.fullrecipe-content .fullrecipe-container .image-descript .fullrecipe-description .time {
+.fullrecipe-content .image-descript .fullrecipe-description .time {
   font-family: Caveat Regular;
   font-size: 20px;
   margin-bottom: 45px;
 }
-.fullrecipe-content .fullrecipe-container .image-descript .fullrecipe-description .serve {
+.fullrecipe-content .image-descript .fullrecipe-description .serve {
   font-family: LatoBlack;
   font-size: 20px;
   margin-bottom: 39px;
 }
-.fullrecipe-content .fullrecipe-container .image-descript .fullrecipe-description .servings {
+.fullrecipe-content .image-descript .fullrecipe-description .servings {
   font-family: Caveat Regular;
   font-size: 20px;
   margin-bottom: 39px;
 }
-.fullrecipe-content .fullrecipe-container .ingredient-container {
+.fullrecipe-content .ingredient-container {
   width: 445px;
+  background-color: yellowgreen;
 }
-.fullrecipe-content .fullrecipe-container .ingredient-container .ingred-title {
+.fullrecipe-content .ingredient-container .ingred-title {
   font-family: LatoBlack;
   font-size: 25px;
   margin-top: 66px;
   margin-bottom: 35px;
 }
-.fullrecipe-content .fullrecipe-container .ingredient-container .ingredient {
+.fullrecipe-content .ingredient-container .ingredient {
   font-family: Caveat Regular;
   font-size: 20px;
 }
-.fullrecipe-content .fullrecipe-container .instructions-container {
+.fullrecipe-content .instructions-container {
   width: 955px;
   margin-top: 66px;
+  background-color: blue;
 }
-.fullrecipe-content .fullrecipe-container .instructions-container .instruct-title {
+.fullrecipe-content .instructions-container .instruct-title {
   font-family: LatoBlack;
   font-size: 25px;
 }
-.fullrecipe-content .fullrecipe-container .instructions-container .instruction {
+.fullrecipe-content .instructions-container .instruction {
   font-family: Caveat Regular;
   font-size: 20px;
 }
-.fullrecipe-content .fullrecipe-container .edit {
+.fullrecipe-content .edit {
   width: 127px;
   height: 42px;
   margin-top: 60px;
   margin-bottom: 120px;
 }
-.fullrecipe-content .fullrecipe-container .side-text {
+.fullrecipe-content .side-text {
   width: 216px;
   height: 30px;
   position: absolute;
   font-size: 25px;
   font-family: LatoBlack;
+  color: #000;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   top: 355px;
@@ -997,7 +1007,6 @@ h1 .load-recipes {
   height: 347px;
   text-align: left;
   z-index: 99;
-  background-color: hotpink;
 }
 
 @media only screen and (max-width: 1200px) {

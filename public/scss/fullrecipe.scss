@@ -5,109 +5,120 @@
 
 	.fullrecipe-container {
 		width: 955px;
-		min-height: 200px;
+		min-height: 800px;
 		margin: 0 auto;
+		display: block;
+		background-color: hotpink;
+	}
 
-		.image-descript {
-			width: 955px;
-			min-height: 422px;
-			margin-top: 250px;
-			display: flex;
-			justify-content: space-between;
+	.image-descript {
+		width: 955px;
+		min-height: 422px;
+		margin-top: 250px;
+		display: flex;
+		justify-content: space-between;
+		background-color: teal;
 
-			.fullrecipe-image {
+		.fullrecipe-image {
+			width: 468px;
+			height: 422px;
+			background-image: url(../images/recipe-pizza.jpg);
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+
+			img {
 				width: 468px;
 				height: 422px;
-				background-image: url(../images/recipe-pizza.jpg);
-				background-position: center;
-				background-size: cover;
-				background-repeat: no-repeat;
-			}
-			.fullrecipe-description {
-				width: 452px;
-				height: 422px;
-
-				.descript {
-					font-family: $font3;
-					font-size: 25px;
-					margin-bottom: 35px;
-				}
-				.fullrecipe-text {
-					font-family: $font2;
-					font-size: 20px;
-					margin-bottom: 45px;
-				}
-				.total-time {
-					font-family: $font3;
-					font-size: 20px;
-					margin-bottom: 39px;
-				}
-				.time {
-					font-family: $font2;
-					font-size: 20px;
-					margin-bottom: 45px;
-				}
-				.serve {
-					font-family: $font3;
-					font-size: 20px;
-					margin-bottom: 39px;
-				}
-				.servings {
-					font-family: $font2;
-					font-size: 20px;
-					margin-bottom: 39px;
-				}
 			}
 		}
-		.ingredient-container {
-			width: 445px;
+		.fullrecipe-description {
+			width: 452px;
+			height: 422px;
 
-			.ingred-title {
+			.descript {
 				font-family: $font3;
 				font-size: 25px;
-				margin-top: 66px;
 				margin-bottom: 35px;
 			}
-			.ingredient {
+			.fullrecipe-text {
 				font-family: $font2;
 				font-size: 20px;
+				margin-bottom: 45px;
 			}
-		}
-		.instructions-container {
-			width: 955px;
-			margin-top: 66px;
-
-			.instruct-title {
+			.total-time {
 				font-family: $font3;
-				font-size: 25px;
+				font-size: 20px;
+				margin-bottom: 39px;
 			}
-			.instruction {
+			.time {
 				font-family: $font2;
 				font-size: 20px;
+				margin-bottom: 45px;
+			}
+			.serve {
+				font-family: $font3;
+				font-size: 20px;
+				margin-bottom: 39px;
+			}
+			.servings {
+				font-family: $font2;
+				font-size: 20px;
+				margin-bottom: 39px;
 			}
 		}
-		.edit {
-			width: 127px;
-			height: 42px;
-			margin-top: 60px;
-			margin-bottom: 120px;
-		}
-		.side-text {
-			width: 216px;
-			height: 30px;
-			position: absolute;
-			font-size: 25px;
+	}
+	.ingredient-container {
+		width: 445px;
+		background-color: yellowgreen;
+
+		.ingred-title {
 			font-family: $font3;
-			writing-mode: vertical-rl;
-			transform: rotate(180deg);
-			top: 355px;
-			left: 300px;
-			width: 94px;
-			height: 347px;
-			text-align: left;
-			z-index: 99;
-			background-color: hotpink;
+			font-size: 25px;
+			margin-top: 66px;
+			margin-bottom: 35px;
 		}
+		.ingredient {
+			font-family: $font2;
+			font-size: 20px;
+		}
+	}
+	.instructions-container {
+		width: 955px;
+		margin-top: 66px;
+		background-color: blue;
+
+		.instruct-title {
+			font-family: $font3;
+			font-size: 25px;
+		}
+		.instruction {
+			font-family: $font2;
+			font-size: 20px;
+		}
+	}
+	.edit {
+		width: 127px;
+		height: 42px;
+		margin-top: 60px;
+		margin-bottom: 120px;
+	}
+	.side-text {
+		width: 216px;
+		height: 30px;
+		position: absolute;
+		font-size: 25px;
+		font-family: $font3;
+		color: #000;
+		writing-mode: vertical-rl;
+		transform: rotate(180deg);
+		top: 355px;
+		left: 300px;
+		width: 94px;
+		height: 347px;
+		text-align: left;
+		z-index: 99;
+		// background-color: hotpink;
 	}
 }
 
