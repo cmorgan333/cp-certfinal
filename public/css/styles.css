@@ -594,6 +594,13 @@ footer .socials .insta {
   margin-bottom: 100px;
   border-bottom: 3px solid #000;
 }
+.create-content .field-container #recipeName {
+  width: 981px;
+  height: 40px;
+  border: none;
+  margin-top: 150px;
+  border-bottom: 3px solid #000;
+}
 .create-content .field-container .attach {
   width: 110px;
   height: 36px;
@@ -622,15 +629,6 @@ footer .socials .insta {
   font-size: 20px;
   color: #000;
 }
-.create-content #recipeName {
-  width: 500px;
-  height: 50px;
-  border-radius: 26px;
-  border: 3px solid #000;
-  margin-top: 100px;
-  margin-left: 240px;
-  text-indent: 10px;
-}
 .create-content #create-button {
   width: 422px;
   height: 52px;
@@ -638,6 +636,7 @@ footer .socials .insta {
   background-color: #efa7a7;
   font-family: Caveat Regular;
   font-size: 25px;
+  margin-top: 200px;
   margin-bottom: 500px;
   margin-left: 275px;
   border: none;

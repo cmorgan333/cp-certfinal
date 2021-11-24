@@ -207,7 +207,7 @@ var RECIPES = [
         }
      ]
   }
-]
+];
 
 var _db = "";
 var userExists = false;
@@ -245,7 +245,7 @@ $(".links a").click(function (e) {
 
 
 function loadData(){
-$.each(RECIPES, function(index, recipe){
+$.each(_userProfileInfo.recipes, function(index, recipe){
 $("#app .recipe-boxes").append(`
 
         <!-- ===RECIPES===== -->
@@ -353,15 +353,15 @@ function addCloseListener(){
 
 
 function addMainRecipe() {
-  let newRecipeTitle = $("#recipeName").val();
-  let newRecipeThumbImg = $("#attach").val();
+let newRecipeTitle = $("#recipeName").val();
+let newRecipeThumbImg = $("#attach").val();
 let newRecipeFullImg = $("#fullrecipe-image").val();
 let newRecipeBriefDescription = $("#full-description").val();
 let newRecipeDescription = $("#fulldescription").val();
 let newRecipeTime = $("#recipe-time").val();
 let newRecipeServings = $("#recipe-serve").val();
-let newRecipeIngredient = $("#ingredient").val();
-let newRecipeInstruction = $("#instruction").val();
+let newRecipeIngredients = $("#ingredient").val();
+let newRecipeInstructions = $("#instruction").val();
 
   let newRecipeObj = {
       recipeTitle: newRecipeTitle,
@@ -380,12 +380,15 @@ updateUserInfo(_userProfileInfo);
 // ====NEED TO CHANGE TO WHAT MINE IS NAMED
 loadData();
 $("#recipeName").val("");
-
   }
 
   function updateUserInfo(userObj) {
     let id = firebase.auth().currentUser.uid;
-    _db.collection("Users").doc(id).update(userObj).then(() => {
+    _db
+    .collection("Users")
+    .doc(id)
+    .update(userObj)
+    .then(() => {
       console.log("updated doc");
     })
     .catch((error) => {
@@ -506,7 +509,7 @@ function login(){
      console.log(doc.data());
      _userProfileInfo = doc.data();
     //  ***change loadlists to what mine is named
-     loadRecipes();
+    loadData();
      console.log("login userinfo ", _userProfileInfo);
 
    })

@@ -3,12 +3,14 @@
         <h1>Hey <span class="name"></span>
             , create your recipe!</h1>
             
-
+            
         <div class="input-holder">
         <input type="text" placeholder="Add Recipe Image">
         <button class="attach" id="attach">Attach file</button>
     </div>
-        <input type="text" placeholder="Recipe Name">
+        <input type="text" id="recipeName" class="recipeName" placeholder="Recipe Name"/>
+    
+      
         <input type="text" id="full-description" placeholder="Recipe Description">
         <input type="text" id="recipe-time" placeholder="Recipe Total Time">
         <input type="text" id="recipe-serve" placeholder="Recipe Serving Size">
@@ -35,8 +37,6 @@
 <!-- ===CREATE RECIPE BUTTON=== -->
 
 <div class="addRecipe">
-   
-    <input type="text" id="recipeName" class="recipeName" placeholder="New Recipe"/>
     <input 
     type="submit"
     name="submit"
