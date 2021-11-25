@@ -209,6 +209,10 @@ var RECIPES = [
   }
 ];
 
+
+
+var INSTRUCTIONS = {}
+
 var _db = "";
 var userExists = false;
 var userFullName = "";
@@ -278,13 +282,21 @@ $("#app .recipe-boxes").append(`
      </a>
         <button class="delete">Delete</button>
      </div>
-</div>
-                
-`);
+</div>`);
 });
 initRecipeListeners();
-
 }
+
+function loadIngredients(){
+   let ingredientString = "<ul>"
+   $.each(RECIPES.recipeIngredients, function(index, ingredient){
+ingredientString += `<li id=${index}">${recipeIngredients.ingredient}</li>`
+   });
+   ingredientString += "</ul>";
+   $("#app .ingredient").html(ingredientString);
+}
+
+
 
 function initRecipeListeners() {
    $(".your-box").click(function(e) {
@@ -310,17 +322,22 @@ function initRecipeListeners() {
     <div class="servings">${RECIPES[recipeIndex].recipeTime}</div>
 </div>
         </div>
+
         <div class="ingredient-container">
+        <div class="title-button-holder">
             <div class="ingred-title">Ingredients:</div>
-            <div class="ingredient">${RECIPES[recipeIndex].recipeIngredients}</div>
+            <button class="load-ingred" onclick="loadIngredients()">Load Ingredients</button> 
+            </div>
+            <div class="ingredient">${RECIPES[ingredientIndex]}</div>
         </div>
+
         <div class="instructions-container">
             <div class="instruct-title">Instructions:</div>
             <div class="instruction">${RECIPES[recipeIndex].recipeInstructions}
             <div>  
         </div>
         <button class="edit">Edit Recipe</button>
-        <div class="close">CLOSE</div>
+        <button class="close">CLOSE</button>
     <div class="side-text"></div>
     </div>
 </div>`);
@@ -331,23 +348,17 @@ function initRecipeListeners() {
 // $(".your").click(function(e) {
 //    $("#your").css(".your-content");
 // });
+
+
+
 function addCloseListener(){
    $(".close").click(function(){
-      $("#app fullrecipe-content").html("");
+      $("#app .fullrecipe-content").html("");
       loadData();
    });
 }
 
-// ===I know this is going to be wrong, look at it
-// function loadRecipes() {
-//   let listString = "<ul>";
-//   $.each(_userProfileInfo.recipes, function (index, recipe) {
-//     listString += `li id="${idx}" onclick="loadRecipes"(${idx})">${recipe.recipeTitle}
-//     <span class="right">Recipes: ${recipe.recipeItems.length}</span></li>`;
-//   });
-//   listString += "<ul>";
-//   $("#app").html(listString);
-// }
+
 
 // ====OBJECTS====//
 
@@ -360,8 +371,8 @@ let newRecipeBriefDescription = $("#full-description").val();
 let newRecipeDescription = $("#fulldescription").val();
 let newRecipeTime = $("#recipe-time").val();
 let newRecipeServings = $("#recipe-serve").val();
-let newRecipeIngredients = $("#ingredient").val();
-let newRecipeInstructions = $("#instruction").val();
+let newIngredient = $("#ingredient").val();
+let newInstruction = $("#instruction").val();
 
   let newRecipeObj = {
       recipeTitle: newRecipeTitle,

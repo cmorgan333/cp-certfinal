@@ -970,12 +970,27 @@ h1 .load-recipes {
 .fullrecipe-content .ingredient-container {
   width: 445px;
   margin-top: 500px;
+  font-family: LatoBlack;
+}
+.fullrecipe-content .ingredient-container .title-button-holder {
+  width: 500px;
+  display: block;
+  font-family: LatoBlack;
+  font-size: 25px;
+  margin-top: 66px;
+  margin-bottom: 35px;
 }
 .fullrecipe-content .ingredient-container .ingred-title {
   font-family: LatoBlack;
   font-size: 25px;
   margin-top: 66px;
   margin-bottom: 35px;
+}
+.fullrecipe-content .ingredient-container .load-ingred {
+  width: 180px;
+  height: 42px;
+  margin-top: 15px;
+  margin-bottom: 30px;
 }
 .fullrecipe-content .ingredient-container .ingredient {
   font-family: Caveat Regular;

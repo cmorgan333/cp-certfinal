@@ -16,7 +16,10 @@
 </div>
         </div>
         <div class="ingredient-container">
+            <div class="title-button-holder">
             <div class="ingred-title">Ingredients:</div>
+            <button onclick="loadIngredients()"></button>
+        </div>
             <div class="ingredient">
                 1/4 batch pizza dough </div>
             <div class="ingredient"> 2 tablespoons Last-Minute Pizza Sauce</div>
@@ -40,29 +43,15 @@
         <button class="edit">Edit Recipe</button>
     
     <div class="side-text">supreme pizza</div>
-</div> -->
+</div>
 
+ -->
+ <!-- <div class="ingredient-container">
+    <div class="title-button-holder">
+        <div class="ingred-title">Ingredients:</div>
+        <button class="load-ingred" onclick="loadIngredients()">Load Ingredients</button> 
+        </div>
+        <div class="ingredient">${RECIPES[recipeIndex].recipeIngredients[ingredientIndex]}</div>
+    </div> -->
 
-<!-- JUST IN CASE
-
-<div class="ingredient"">
-    <div class="ingredient"> 2 tablespoons Last-Minute Pizza Sauce</div>
-    <div class="ingredient">10 slices pepperoni</div>
-    <div class="ingredient">1 cup cooked and crumbled Italian sausage</div>
-    <div class="ingredient">2 large mushrooms,</div>
-    <div class="ingredient">sliced 1/4 bell pepper, sliced</div>
-    <div class="ingredient"> 1 tablespoon sliced black olives </div>
-    <div class="ingredient">1 cup shredded mozzarella cheese</div> -->
-
-    <!-- INGREDIENTS -->
-
-    <!-- 1. Preheat the oven to 475°. Spray pizza pan with nonstick cooking or line a baking sheet with parchment paper. </div>
-
-            <div class="instruction">2. Flatten dough into a thin round and place on the pizza pan.
-
-                3. Spread pizza sauce over the dough.
-            </div>
-            <div class="instruction">4. Layer the toppings over the dough in the order listed .</div>
-            <div class="instruction">5. Bake for 8 to 10 minutes or until the crust is crisp and the cheese melted and lightly browned.</div>
-            </div>
-            -->
+    ${RECIPES[recipeIndex].recipeIngredients}

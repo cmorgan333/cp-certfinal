@@ -73,6 +73,16 @@
 	.ingredient-container {
 		width: 445px;
 		margin-top: 500px;
+		font-family: $font3;
+
+		.title-button-holder {
+			width: 500px;
+			display: block;
+			font-family: $font3;
+			font-size: 25px;
+			margin-top: 66px;
+			margin-bottom: 35px;
+		}
 
 		.ingred-title {
 			font-family: $font3;
@@ -80,12 +90,20 @@
 			margin-top: 66px;
 			margin-bottom: 35px;
 		}
+		.load-ingred {
+			width: 180px;
+			height: 42px;
+			margin-top: 15px;
+			margin-bottom: 30px;
+		}
+
 		.ingredient {
 			font-family: $font2;
 			font-size: 20px;
 			margin-top: 20px;
 		}
 	}
+
 	.instructions-container {
 		width: 955px;
 		margin-top: 66px;
