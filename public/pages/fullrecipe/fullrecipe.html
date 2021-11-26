@@ -1,7 +1,7 @@
 <!-- <div class="fullrecipe-content">
     <div class="fullrecipe-container">
         <div class="image-descript">
-            
+            <div class="side-text">supreme pizza</div>
 <div class="fullrecipe-image" id="fullrecipe-image"></div>
 <div class="fullrecipe-description">
     <div class="descript">Description:</div>
@@ -14,44 +14,51 @@
     <div class="servings">4 servings</div>
 </div>
 </div>
+</div> -->
+<!-- ${RECIPES[recipeIndex].recipeIngredients} -->
+
+<!-- =====EXTRA===== -->
+ 
+<!-- <div class="fullrecipe-content">
+    <div class="fullrecipe-container" >
+        <div class="image-descript">
+            
+<div class="fullrecipe-image" id="fullrecipe-image">
+<img src="images/${RECIPES[recipeIndex].recipeFullImg}"
+</div>
+<div class="fullrecipe-description">
+    <div class="descript">Description:</div>
+    <div class="fullrecipe-text">
+    ${RECIPES[recipeIndex].recipeBriefDescription}
+    </div>
+    <div class="total-time">Total Time:</div>
+    <div class="time"> ${RECIPES[recipeIndex].recipeTime}</div>
+    <div class="serve">Servings:</div>
+    <div class="servings">${RECIPES[recipeIndex].recipeTime}</div>
+</div>
         </div>
-        <div class="ingredient-container">
-            <div class="title-button-holder">
+
+        <div class="ingredient-container" id="ingredient-container>
+        <div class="title-button-holder">
             <div class="ingred-title">Ingredients:</div>
-            <button onclick="loadIngredients()"></button>
+            <button class="load-ingred" onclick="loadIngredients()">Load Ingredients</button> 
+            </div>
+            <div class="ingredient" id="ingredient">${RECIPES.recipeIngredients}</div>
         </div>
-            <div class="ingredient">
-                1/4 batch pizza dough </div>
-            <div class="ingredient"> 2 tablespoons Last-Minute Pizza Sauce</div>
-            <div class="ingredient">10 slices pepperoni</div>
-            <div class="ingredient">1 cup cooked and crumbled Italian sausage</div>
-            <div class="ingredient">2 large mushrooms,</div>
-            <div class="ingredient">sliced 1/4 bell pepper, sliced</div>
-            <div class="ingredient"> 1 tablespoon sliced black olives </div>
-            <div class="ingredient">1 cup shredded mozzarella cheese</div>
-        </div>
+
         <div class="instructions-container">
             <div class="instruct-title">Instructions:</div>
-            <div class="instruction">1. Preheat the oven to 475°. Spray pizza pan with nonstick cooking or line a baking sheet with parchment paper. </div>
-            <div class="instruction">2. Flatten dough into a thin round and place on the pizza pan.</div>
-            <div class="instruction">
-                3. Spread pizza sauce over the dough.
-            </div>
-            <div class="instruction">4. Layer the toppings over the dough in the order listed .</div>
-            <div class="instruction">5. Bake for 8 to 10 minutes or until the crust is crisp and the cheese melted and lightly browned.</div>
+            <div class="instruction" id="instruction">${RECIPES.recipeInstructions}
+            <div>  
         </div>
         <button class="edit">Edit Recipe</button>
-    
-    <div class="side-text">supreme pizza</div>
+        <button class="close">CLOSE</button>
+    <div class="side-text"></div>
+    </div>
 </div>
 
- -->
- <!-- <div class="ingredient-container">
-    <div class="title-button-holder">
-        <div class="ingred-title">Ingredients:</div>
-        <button class="load-ingred" onclick="loadIngredients()">Load Ingredients</button> 
-        </div>
-        <div class="ingredient">${RECIPES[recipeIndex].recipeIngredients[ingredientIndex]}</div>
-    </div> -->
+    -->
 
-    ${RECIPES[recipeIndex].recipeIngredients}
+    <!-- CHEKING CODE -->
+
+    

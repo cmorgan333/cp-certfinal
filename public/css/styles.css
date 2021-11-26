@@ -1033,11 +1033,12 @@ h1 .load-recipes {
   position: absolute;
   font-size: 25px;
   font-family: LatoBlack;
+  letter-spacing: 5px;
   color: #000;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
-  top: 355px;
-  left: 300px;
+  top: 200px;
+  left: 190px;
   width: 94px;
   height: 347px;
   text-align: left;
