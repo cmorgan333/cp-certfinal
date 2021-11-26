@@ -324,12 +324,12 @@ function initRecipeListeners() {
             <div class="ingred-title">Ingredients:</div>
             <button class="load-ingred" onclick="loadIngredients()">Load Ingredients</button> 
             </div>
-            <div class="ingredient" id="ingredient">${RECIPE[ingredientIndex]}</div>
+            <div class="ingredient" id="ingredient">${RECIPES.recipeIngredients}</div>
         </div>
 
         <div class="instructions-container">
             <div class="instruct-title">Instructions:</div>
-            <div class="instruction" id="instruction">${RECIPE.recipeInstructions}
+            <div class="instruction" id="instruction">${RECIPES.recipeInstructions}
             <div>  
         </div>
         <button class="edit">Edit Recipe</button>
