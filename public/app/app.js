@@ -328,7 +328,7 @@ function initRecipeListeners() {
             <div class="ingred-title">Ingredients:</div>
             <button class="load-ingred" onclick="loadIngredients()">Load Ingredients</button> 
             </div>
-            <div class="ingredient" id="ingredient">${RECIPES[recipeIndex]}</div>
+            <div class="ingredient">${RECIPES[ingredientIndex]}</div>
         </div>
 
         <div class="instructions-container">
