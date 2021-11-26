@@ -789,6 +789,7 @@ h1 .load-recipes {
   width: 128px;
   height: 42px;
   z-index: 99;
+  cursor: pointer;
 }
 
 .your-description {
