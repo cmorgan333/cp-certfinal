@@ -209,8 +209,6 @@ var RECIPES = [
   }
 ];
 
-var RECIPEINGREDIETNS = [];
-
 var _db = "";
 var userExists = false;
 var userFullName = "";
@@ -287,8 +285,8 @@ initRecipeListeners();
 
 function loadIngredients(){
    let ingredientString = "<ul>"
-   $.each(RECIPES.RECIPEINGREDIETNS, function(index){
-ingredientString += `<li id=${index}">${RECIPES.ingredient}</li>`
+   $.each(RECIPES.recipeIngredients, function(index){
+ingredientString += `<li id=${index}">${RECIPES.recipeIngredients.ingredient}</li>`
    });
    ingredientString += "</ul>";
    $("#app .ingredient").html(ingredientString);
@@ -326,7 +324,7 @@ function initRecipeListeners() {
             <div class="ingred-title">Ingredients:</div>
             <button class="load-ingred" onclick="loadIngredients()">Load Ingredients</button> 
             </div>
-            <div class="ingredient" id="ingredient">${RECIPEINGREDIENTS[index]}</div>
+            <div class="ingredient" id="ingredient">${RECIPE[ingredientIndex]}</div>
         </div>
 
         <div class="instructions-container">
@@ -369,8 +367,8 @@ let newRecipeBriefDescription = $("#full-description").val();
 let newRecipeDescription = $("#fulldescription").val();
 let newRecipeTime = $("#recipe-time").val();
 let newRecipeServings = $("#recipe-serve").val();
-let newRecipeIngredients = $("#ingredient").val();
-let newRecipeInstructions = $("#instruction").val();
+let newIngredient = $("#ingredient").val();
+let newInstruction = $("#instruction").val();
 
   let newRecipeObj = {
       recipeTitle: newRecipeTitle,
