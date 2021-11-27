@@ -287,8 +287,9 @@ function initRecipeListeners() {
           <button class="close" id="close" onlick="your.html">Close</button> 
   </div>
   </div>`);
-      // addCloseListener();
+    
 });
+// addCloseListener();
 }
 
 // function addCloseListener(){
