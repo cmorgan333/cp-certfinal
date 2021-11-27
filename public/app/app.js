@@ -338,14 +338,14 @@ $("#app .recipe-boxes").append(`
 initRecipeListeners();
 }
 
-function loadIngredients(){
-   let ingredientString = "<ul>"
-   $.each(RECIPES.recipeIngredients, function(index){
-ingredientString += `<li id=${index}">${RECIPES.recipeIngredients.ingredient}</li>`
-   });
-   ingredientString += "</ul>";
-   $("#app .ingredient").html(ingredientString);
-}
+// function loadIngredients(){
+//    let ingredientString = "<ul>"
+//    $.each(RECIPES.recipeIngredients, function(index){
+// ingredientString += `<li id=${index}">${RECIPES.recipeIngredients.ingredient}</li>`
+//    });
+//    ingredientString += "</ul>";
+//    $("#app .ingredient").html(ingredientString);
+// }
 
 
 
@@ -357,7 +357,7 @@ let newRecipeTitle = $("#recipeName").val();
 let newRecipeThumbImg = $("#attach").val();
 let newRecipeFullImg = $("#fullrecipe-image").val();
 let newRecipeBriefDescription = $("#full-description").val();
-let newRecipeDescription = $("#fulldescription").val();
+let newRecipeDescription = $("#full-description").val();
 let newRecipeTime = $("#recipe-time").val();
 let newRecipeServings = $("#recipe-serve").val();
 // let newIngredient = $("#ingredient").val();
@@ -367,21 +367,24 @@ let newRecipeServings = $("#recipe-serve").val();
   let newRecipeObj = {
       recipeTitle: newRecipeTitle,
       recipeThumbImg: newRecipeThumbImg, 
-      recipeFullImg: newRecipeFullImg,
+      // recipeFullImg: newRecipeFullImg,
       recipeBriefDescription: newRecipeBriefDescription,
-      recipeDescription: newRecipeDescription,
+      // recipeDescription: newRecipeDescription,
       recipeTime: newRecipeTime,
       recipeServings: newRecipeServings,
       recipeIngredients: [],
       recipeInstructions: [],
   };
 _userProfileInfo.recipes.push(newRecipeObj);
-updateUserInfo(_userProfileInfo);
 
+updateUserInfo(_userProfileInfo);
+}
 // ====NEED TO CHANGE TO WHAT MINE IS NAMED
 loadData();
 $("#recipeName").val("");
-  }
+
+
+  
 
   function updateUserInfo(userObj) {
     let id = firebase.auth().currentUser.uid;
