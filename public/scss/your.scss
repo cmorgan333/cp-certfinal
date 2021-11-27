@@ -73,6 +73,7 @@ h1 {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		cursor: pointer;
 
 		img {
 			width: 300px;
@@ -81,6 +82,7 @@ h1 {
 			background-size: cover;
 			background-repeat: no-repeat;
 			position: absolute;
+			cursor: pointer;
 
 			// display: flex;
 			// align-items: center;
@@ -91,6 +93,7 @@ h1 {
 		width: 128px;
 		height: 42px;
 		z-index: 99;
+		cursor: pointer;
 	}
 }
 

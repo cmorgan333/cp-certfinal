@@ -254,7 +254,7 @@ $("#app .recipe-boxes").append(`
         <div class="your-image">
         <img src="images/pizzaThumbs-assets/${recipe.recipeThumbImg}"
             <a href="#fullrecipe">
-            <button class="view" onclick="addMainRecipe()">View</button>
+            <button class="view" onclick="initRecipeListeners()">View</button>
          </a>
          </div>
         
@@ -297,6 +297,7 @@ ingredientString += `<li id=${index}">${RECIPES.recipeIngredients.ingredient}</l
 function initRecipeListeners() {
    $(".your-box").click(function(e) {
       let recipeIndex = e.currentTarget.id;
+      console.log(recipeIndex);
    // });
         
       $("#app .your-content").html(`
@@ -339,17 +340,12 @@ function initRecipeListeners() {
               <div class="instruction" id="instruction">5. Bake for 8 to 10 minutes or until the crust is crisp and the cheese melted and lightly browned.</div>
           </div>
           <button class="edit">Edit Recipe</button> 
+          <button class="close" id="close">Close</button> 
   </div>
   </div>`);
-      addCLoseListener();
+      addCloseListener();
 });
-
 }
-// $(".your").click(function(e) {
-//    $("#your").css(".your-content");
-// });
-
-
 
 function addCloseListener(){
    $(".close").click(function(){
