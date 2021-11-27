@@ -367,8 +367,8 @@ let newRecipeBriefDescription = $("#full-description").val();
 let newRecipeDescription = $("#fulldescription").val();
 let newRecipeTime = $("#recipe-time").val();
 let newRecipeServings = $("#recipe-serve").val();
-let newIngredient = $("#ingredient").val();
-let newInstruction = $("#instruction").val();
+// let newIngredient = $("#ingredient").val();
+// let newInstruction = $("#instruction").val();
 
 
   let newRecipeObj = {
