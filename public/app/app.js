@@ -242,7 +242,62 @@ $(".links a").click(function (e) {
 }
 
 // });
+function initRecipeListeners() {
+   $(".your-box").click(function(e) {
+      let recipeIndex = e.currentTarget.id;
+      // let newRecipeObjIndex = recipeIndex + newRecipeObj;
+      // let newRecipeObjIndex = newRecipeObj;
+      console.log(recipeIndex);
+   // });
+        
+      $("#app .your-content").html(`
+      <div class="fullrecipe-content">
+      <div class="fullrecipe-container">
+          <div class="image-descript">
+              <div class="side-text">${RECIPES[recipeIndex].recipeTitle}</div>
+  <div class="fullrecipe-image" id="fullrecipe-image">
+  <img src="images/${RECIPES[recipeIndex].recipeFullImg}"
+  </div>
+  <div class="fullrecipe-description">
+      <div class="descript">Description:</div>
+      <div class="fullrecipe-text">
+          ${RECIPES[recipeIndex].recipeBriefDescription}
+      </div>
+      <div class="total-time">Total Time</div>
+      <div class="time">${RECIPES[recipeIndex].recipeTime}</div>
+      <div class="serve">Servings:</div>
+      <div class="servings">${RECIPES[recipeIndex].recipeServings}</div>
+  </div>
+  </div>
+  
+          <div class="ingredient-container">
+              <div class="title-button-holder">
+              <div class="ingred-title">Ingredients:</div>
+              <button onclick="loadIngredients()">Load Ingredients</button>
+          </div>
+              <div class="ingredient" id="ingredient">
+              ${RECIPES[recipeIndex].recipeIngredients}   
+              </div>
+          </div>
+          <div class="instructions-container">
+              <div class="instruct-title">Instructions:</div>
+              <div class="instruction" id="instruction">${RECIPES[recipeIndex].recipeInstructions} </div>
+   </div>
+          <button class="edit">Edit Recipe</button> 
+          <button class="close" id="close" onlick="your.html">Close</button> 
+  </div>
+  </div>`);
+      // addCloseListener();
+});
+}
 
+// function addCloseListener(){
+//    $(".close").click(function(){
+//       $("#app .fullrecipe-content").html("");
+//       // $("#app .fullrecipe-content").html("");
+//       loadData();
+//    });
+// }
 
 function loadData(){
 $.each(_userProfileInfo.recipes, function(index, recipe){
@@ -251,10 +306,10 @@ $("#app .recipe-boxes").append(`
         <!-- ===RECIPES===== -->
    
         <div id="${index}"" class="your-box">
-        <div class="your-image">
+        <div class="your-image" onclick="initRecipeListeners()">
         <img src="images/pizzaThumbs-assets/${recipe.recipeThumbImg}"
             <a href="#fullrecipe">
-            <button class="view" onclick="initRecipeListeners()" onlclick"addMainRecipe">View</button>
+            <button class="view" onclick"addMainRecipe()" onclick="loadData()">View</button>
          </a>
          </div>
         
@@ -346,67 +401,9 @@ $("#recipeName").val("");
 
  
 
-  function initRecipeListeners() {
-   $(".your-box").click(function(e) {
-      let recipeIndex = e.currentTarget.id;
-      // let newRecipeObjIndex = recipeIndex + newRecipeObj;
-      // let newRecipeObjIndex = newRecipeObj;
-      console.log(recipeIndex);
-   // });
-        
-      $("#app .your-content").html(`
-      <div class="fullrecipe-content">
-      <div class="fullrecipe-container">
-          <div class="image-descript">
-              <div class="side-text">${RECIPES[recipeIndex].recipeTitle}</div>
-  <div class="fullrecipe-image" id="fullrecipe-image">
-  <img src="images/${RECIPES[recipeIndex].recipeFullImg}"
-  </div>
-  <div class="fullrecipe-description">
-      <div class="descript">Description:</div>
-      <div class="fullrecipe-text">
-          ${RECIPES[recipeIndex].recipeBriefDescription}
-      </div>
-      <div class="total-time">Total Time</div>
-      <div class="time">${RECIPES[recipeIndex].newRecipeTime}</div>
-      <div class="serve">Servings:</div>
-      <div class="servings">${RECIPES[recipeIndex].newRecipeServings}</div>
-  </div>
-  </div>
-  
-          <div class="ingredient-container">
-              <div class="title-button-holder">
-              <div class="ingred-title">Ingredients:</div>
-              <button onclick="loadIngredients()">Load Ingredients</button>
-          </div>
-              <div class="ingredient" id="ingredient">
-              ${RECIPES[recipeIndex]}   
-              </div>
-          </div>
-          <div class="instructions-container">
-              <div class="instruct-title">Instructions:</div>
-              <div class="instruction" id="instruction">1. Preheat the oven to 475°. Spray pizza pan with nonstick cooking or line a baking sheet with parchment paper. </div>
-              <div class="instruction" id="instruction">2. Flatten dough into a thin round and place on the pizza pan.</div>
-              <div class="instruction" id="instruction">
-                  3. Spread pizza sauce over the dough.
-              </div>
-              <div class="instruction" id="instruction">4. Layer the toppings over the dough in the order listed .</div>
-              <div class="instruction" id="instruction">5. Bake for 8 to 10 minutes or until the crust is crisp and the cheese melted and lightly browned.</div>
-          </div>
-          <button class="edit">Edit Recipe</button> 
-          <button class="close" id="close">Close</button> 
-  </div>
-  </div>`);
-      addCloseListener();
-});
-}
 
-function addCloseListener(){
-   $(".close").click(function(){
-      $("#app .fullrecipe-content").html("");
-      loadData();
-   });
-}
+
+
 
 // =====STATE CHANGE====//
 function initFirebase() {
