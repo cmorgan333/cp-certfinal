@@ -256,7 +256,7 @@ function initRecipeListeners() {
           <div class="image-descript">
               <div class="side-text">${RECIPES[recipeIndex].recipeTitle}</div>
   <div class="fullrecipe-image" id="fullrecipe-image">
-  <img src="images/${RECIPES[recipeIndex].recipeFullImg}"
+  <img src="images/${RECIPES[recipeIndex].recipeThumbImg}"
   </div>
   <div class="fullrecipe-description">
       <div class="descript">Description:</div>
@@ -310,7 +310,7 @@ $("#app .recipe-boxes").append(`
         <div class="your-image">
         <img src="images/pizzaThumbs-assets/${recipe.recipeThumbImg}"
             <a href="#fullrecipe">
-            <button class="view" onclick="initRecipeListeners()">View</button>
+            <button class="view" onclick="addMainRecipe()">View</button>
          </a>
          </div>
         
@@ -341,14 +341,21 @@ initRecipeListeners();
 
 // function loadIngredients(){
 //    let ingredientString = "<ul>"
-//    $.each(RECIPES.recipeIngredients, function(index){
+//    $.each(_userProfileInfo.recipeIngredients[ingredientIndex], function(index){
 // ingredientString += `<li id=${index}">${RECIPES.recipeIngredients.ingredient}</li>`
 //    });
 //    ingredientString += "</ul>";
 //    $("#app .ingredient").html(ingredientString);
 // }
 
-
+function loadIngredients(recipeIndex){
+   let ingredientString = `<button onlick="loadLists">Back</button><ul>`
+   $.each(_userProfileInfo.recipes[recipeIndex].recipeIngredients, function(index){
+ingredientString += `<li id=${index}">${RECIPES[recipeIndex].recipeIngredients}</li>`
+   });
+   ingredientString += "</ul>";
+   $("#app #ingredient").html(ingredientString);
+}
 
 // ====OBJECTS====//
 
@@ -368,7 +375,7 @@ let newRecipeServings = $("#recipe-serve").val();
   let newRecipeObj = {
       recipeTitle: newRecipeTitle,
       recipeThumbImg: newRecipeThumbImg, 
-      // recipeFullImg: newRecipeFullImg,
+      recipeFullImg: newRecipeFullImg,
       recipeBriefDescription: newRecipeBriefDescription,
       // recipeDescription: newRecipeDescription,
       recipeTime: newRecipeTime,
@@ -402,12 +409,6 @@ $("#recipeName").val("");
       console.log("update error " + errorMessage);
     });
   }
-
- 
-
-
-
-
 
 // =====STATE CHANGE====//
 function initFirebase() {

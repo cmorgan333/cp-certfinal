@@ -927,11 +927,12 @@ h1 .load-recipes {
 .fullrecipe-content .image-descript .fullrecipe-image {
   width: 468px;
   height: 422px;
-  background-image: url(../images/recipe-pizza.jpg);
+  background-color: rgba(242, 92, 84, 0.6);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 1;
+  background-image: url(../images/recipe-pizza.jpg);
 }
 .fullrecipe-content .image-descript .fullrecipe-image img {
   width: 468px;
