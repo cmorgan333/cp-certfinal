@@ -306,10 +306,10 @@ $("#app .recipe-boxes").append(`
         <!-- ===RECIPES===== -->
    
         <div id="${index}"" class="your-box">
-        <div class="your-image" onclick="initRecipeListeners()">
+        <div class="your-image">
         <img src="images/pizzaThumbs-assets/${recipe.recipeThumbImg}"
             <a href="#fullrecipe">
-            <button class="view" onclick"addMainRecipe()" onclick="loadData()">View</button>
+            <button class="view" onclick="initRecipeListeners()">View</button>
          </a>
          </div>
         
