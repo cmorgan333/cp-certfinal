@@ -379,6 +379,7 @@ footer .socials .insta {
   min-height: 263px;
   margin-bottom: 50px;
   display: flex;
+  cursor: pointer;
 }
 .browse-content .browse-hero .recipe-box .recipe-image {
   width: 300px;
@@ -387,6 +388,7 @@ footer .socials .insta {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 .browse-content .browse-hero .recipe-box .pizza {
   background-image: url(../images/recipe-pizza.jpg);

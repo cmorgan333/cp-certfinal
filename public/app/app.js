@@ -344,6 +344,8 @@ $("#recipeName").val("");
     });
   }
 
+ 
+
   function initRecipeListeners() {
    $(".your-box").click(function(e) {
       let recipeIndex = e.currentTarget.id;
@@ -358,12 +360,12 @@ $("#recipeName").val("");
           <div class="image-descript">
               <div class="side-text">${RECIPES[recipeIndex].recipeTitle}</div>
   <div class="fullrecipe-image" id="fullrecipe-image">
-  <img src="images/${RECIPES[recipeIndex].newRecipeFullImg}"
+  <img src="images/${RECIPES[recipeIndex].recipeFullImg}"
   </div>
   <div class="fullrecipe-description">
       <div class="descript">Description:</div>
       <div class="fullrecipe-text">
-          ${RECIPES[recipeIndex].newRecipeBriefDescription}
+          ${RECIPES[recipeIndex].recipeBriefDescription}
       </div>
       <div class="total-time">Total Time</div>
       <div class="time">${RECIPES[recipeIndex].newRecipeTime}</div>

@@ -29,6 +29,7 @@
 			min-height: 263px;
 			margin-bottom: 50px;
 			display: flex;
+			cursor: pointer;
 
 			.recipe-image {
 				width: 300px;
@@ -37,6 +38,7 @@
 				background-position: center;
 				background-size: cover;
 				background-repeat: no-repeat;
+				cursor: pointer;
 			}
 
 			.pizza {
