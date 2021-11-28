@@ -979,6 +979,7 @@ h1 .load-recipes {
 }
 .fullrecipe-content .ingredient-container {
   width: 445px;
+  margin-left: 40px;
   font-family: LatoBlack;
 }
 .fullrecipe-content .ingredient-container .title-button-holder {
@@ -1009,6 +1010,7 @@ h1 .load-recipes {
 .fullrecipe-content .instructions-container {
   width: 445px;
   margin-top: 66px;
+  margin-left: 40px;
 }
 .fullrecipe-content .instructions-container .instruct-title {
   font-family: LatoBlack;

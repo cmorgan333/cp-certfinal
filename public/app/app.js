@@ -541,6 +541,10 @@ $(".logoutbtn").css("display");
         } else {
           _db = "";
           _userProfileInfo = {};
+          $("#app .recipe-boxes").html("");
+          $("#app .fullrecipe-content").html("");
+          $("#app .create-content").html("");
+          $("#app .editrecipe-content").html("");
             console.log("auth changed logged out");
             $(".name").html("");
             $(".view").prop("disabled", true);
