@@ -927,7 +927,6 @@ h1 .load-recipes {
 .fullrecipe-content .image-descript .fullrecipe-image {
   width: 468px;
   height: 422px;
-  background-image: url(../images/recipe-pizza.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -937,6 +936,7 @@ h1 .load-recipes {
   width: 468px;
   height: 422px;
   opacity: 1;
+  background-image: url(../images/recipe-pizza.jpg);
 }
 .fullrecipe-content .image-descript .fullrecipe-description {
   width: 452px;

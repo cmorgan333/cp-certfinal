@@ -1,209 +1,209 @@
 var RECIPES = [
   {
-     "recipeTitle":"Supreme Pizza",
-     "recipeThumbImg":"pizzathumb_300x263.jpg",
-     "recipeFullImg":"recipe-pizza.jpg",
-     "recipeBriefDescription":"Make pizza night super duper out of this world with homemade pizza. This recipe is supreme with vegetables and two types of meat. Yum!",
-     "recipeDescription":"Make pizza night super duper out of this world with homemade pizza. This recipe is supreme with vegetables and two types of meat. Yum!",
-     "recipeTime":"1h 24min",
-     "recipeServings":"4 servings",
-     "recipeIngredients":[
+     recipeTitle:"Supreme Pizza",
+     recipeThumbImg:"pizzathumb_300x263.jpg",
+     recipeFullImg:"recipe-pizza.jpg",
+     recipeBriefDescription:"Make pizza night super duper out of this world with homemade pizza. This recipe is supreme with vegetables and two types of meat. Yum!",
+     recipeDescription:"Make pizza night super duper out of this world with homemade pizza. This recipe is supreme with vegetables and two types of meat. Yum!",
+     recipeTime:"1h 24min",
+     recipeServings:"4 servings",
+     recipeIngredients:[
         {
-           "ingredient":"1/4 batch pizza dough"
+           ingredient:"1/4 batch pizza dough"
         },
         {
-           "ingredient":"2 tablespoons Last-Minute Pizza Sauce"
+           ingredient:"2 tablespoons Last-Minute Pizza Sauce"
         },
         {
-           "ingredient":"10 slices pepperoni"
+           ingredient:"10 slices pepperoni"
         },
         {
-           "ingredient":"1 cup cooked and crumbled Italian sausage"
+           ingredient:"1 cup cooked and crumbled Italian sausage"
         },
         {
-           "ingredient":"2 large mushrooms"
+           ingredient:"2 large mushrooms"
         },
         {
-           "ingredient":"sliced 1/4 bell pepper sliced"
+           ingredient:"sliced 1/4 bell pepper sliced"
         },
         {
-           "ingredient":"1 tablespoon sliced black olives"
+           ingredient:"1 tablespoon sliced black olives"
         },
         {
-           "ingredient":"1 cup shredded mozzarella cheese"
+           ingredient:"1 cup shredded mozzarella cheese"
         }
      ],
-     "recipeInstructions":[
+     recipeInstructions:[
         {
-           "instruction":"1. Preheat the oven to 475°. Spray pizza pan with nonstick cooking or line a baking sheet with parchment paper. "
+           instruction:"1. Preheat the oven to 475°. Spray pizza pan with nonstick cooking or line a baking sheet with parchment paper. "
         },
         {
-           "instruction":"2. Flatten dough into a thin round and place on the pizza pan. "
+           instruction:"2. Flatten dough into a thin round and place on the pizza pan. "
         },
         {
-           "instruction":"3. Spread pizza sauce over the dough."
+           instruction:"3. Spread pizza sauce over the dough."
         },
         {
-           "instruction":" 4. Layer the toppings over the dough in the order listed."
+           instruction:" 4. Layer the toppings over the dough in the order listed."
         },
         {
-           "instruction":" 5. Bake for 8 to 10 minutes or until the crust is crisp and the cheese melted and lightly browned."
+           instruction:" 5. Bake for 8 to 10 minutes or until the crust is crisp and the cheese melted and lightly browned."
         }
      ]
   },
   {
-     "recipeTitle":"Classic Burger",
-     "recipeThumbImg":"burgerthumb_300x263.jpg",
-     "recipeFullImg":"recipe-burger.jpg",
-     "recipeBriefDescription":"Sink your teeth into a delicious restaurant-style, hamburger recipe made from lean beef. Skip the prepackaged patties and take the extra time to craft up your own, and that little extra effort will be worth it.",
-     "recipeDescription":"Sink your teeth into a delicious restaurant-style, hamburger recipe made from lean beef. Skip the prepackaged patties and take the extra time to craft up your own, and that little extra effort will be worth it.Make pizza night super duper out of this world with homemade pizza. This recipe is supreme with vegetables and two types of meat. Yum!",
-     "recipeTime":"30 min",
-     "recipeServings":"4 servings",
-     "recipeIngredients":[
+     recipeTitle:"Classic Burger",
+     recipeThumbImg:"burgerthumb_300x263.jpg",
+     recipeFullImg:"recipe-burger.jpg",
+     recipeBriefDescription:"Sink your teeth into a delicious restaurant-style, hamburger recipe made from lean beef. Skip the prepackaged patties and take the extra time to craft up your own, and that little extra effort will be worth it.",
+     recipeDescription:"Sink your teeth into a delicious restaurant-style, hamburger recipe made from lean beef. Skip the prepackaged patties and take the extra time to craft up your own, and that little extra effort will be worth it.Make pizza night super duper out of this world with homemade pizza. This recipe is supreme with vegetables and two types of meat. Yum!",
+     recipeTime:"30 min",
+     recipeServings:"4 servings",
+     recipeIngredients:[
         {
-           "ingredient":"1/4 batch pizza dough"
+           ingredient:"1/4 batch pizza dough"
         },
         {
-           "ingredient":"2 tablespoons Last-Minute Pizza Sauce"
+           ingredient:"2 tablespoons Last-Minute Pizza Sauce"
         },
         {
-           "ingredient":"10 slices pepperoni"
+           ingredient:"10 slices pepperoni"
         },
         {
-           "ingredient":"1 cup cooked and crumbled Italian sausage"
+           ingredient:"1 cup cooked and crumbled Italian sausage"
         },
         {
-           "ingredient":"2 large mushrooms"
+           ingredient:"2 large mushrooms"
         },
         {
-           "ingredient":"sliced 1/4 bell pepper sliced"
+           ingredient:"sliced 1/4 bell pepper sliced"
         },
         {
-           "ingredient":"1 tablespoon sliced black olives"
+           ingredient:"1 tablespoon sliced black olives"
         },
         {
-           "ingredient":"1 cup shredded mozzarella cheese"
+           ingredient:"1 cup shredded mozzarella cheese"
         }
      ],
-     "recipeInstructions":[
+     recipeInstructions:[
         {
-           "instruction":"1. Preheat the oven to 475°. Spray pizza pan with nonstick cooking or line a baking sheet with parchment paper. "
+           instruction:"1. Preheat the oven to 475°. Spray pizza pan with nonstick cooking or line a baking sheet with parchment paper. "
         },
         {
-           "instruction":"2. Flatten dough into a thin round and place on the pizza pan. "
+           instruction:"2. Flatten dough into a thin round and place on the pizza pan. "
         },
         {
-           "instruction":"3. Spread pizza sauce over the dough."
+           instruction:"3. Spread pizza sauce over the dough."
         },
         {
-           "instruction":" 4. Layer the toppings over the dough in the order listed."
+           instruction:" 4. Layer the toppings over the dough in the order listed."
         },
         {
-           "instruction":" 5. Bake for 8 to 10 minutes or until the crust is crisp and the cheese melted and lightly browned."
+           instruction:" 5. Bake for 8 to 10 minutes or until the crust is crisp and the cheese melted and lightly browned."
         }
      ]
   },
   {
-     "recipeTitle":"Chicken Biryani",
-     "recipeThumbImg":"biryanithumb_300x263.jpg",
-     "recipeFullImg":"recipe-pilaf.jpg",
-     "recipeBriefDescription":"Chicken Biryani is a bold and flavorful Indian dish with crazy tender bites of chicken with bell peppers in a deliciously spiced and fragrant rice.",
-     "recipeDescription":"Chicken Biryani is a bold and flavorful Indian dish with crazy tender bites of chicken with bell peppers in a deliciously spiced and fragrant rice.",
-     "recipeTime":"1h 15min",
-     "recipeServings":"6 servings",
-     "recipeIngredients":[
+     recipeTitle:"Chicken Biryani",
+     recipeThumbImg:"biryanithumb_300x263.jpg",
+     recipeFullImg:"recipe-pilaf.jpg",
+     recipeBriefDescription:"Chicken Biryani is a bold and flavorful Indian dish with crazy tender bites of chicken with bell peppers in a deliciously spiced and fragrant rice.",
+     recipeDescription:"Chicken Biryani is a bold and flavorful Indian dish with crazy tender bites of chicken with bell peppers in a deliciously spiced and fragrant rice.",
+     recipeTime:"1h 15min",
+     recipeServings:"6 servings",
+     recipeIngredients:[
         {
-           "ingredient":"1/4 batch pizza dough"
+           ingredient:"1/4 batch pizza dough"
         },
         {
-           "ingredient":"2 tablespoons Last-Minute Pizza Sauce"
+           ingredient:"2 tablespoons Last-Minute Pizza Sauce"
         },
         {
-           "ingredient":"10 slices pepperoni"
+           ingredient:"10 slices pepperoni"
         },
         {
-           "ingredient":"1 cup cooked and crumbled Italian sausage"
+           ingredient:"1 cup cooked and crumbled Italian sausage"
         },
         {
-           "ingredient":"2 large mushrooms"
+           ingredient:"2 large mushrooms"
         },
         {
-           "ingredient":"sliced 1/4 bell pepper sliced"
+           ingredient:"sliced 1/4 bell pepper sliced"
         },
         {
-           "ingredient":"1 tablespoon sliced black olives"
+           ingredient:"1 tablespoon sliced black olives"
         },
         {
-           "ingredient":"1 cup shredded mozzarella cheese"
+           ingredient:"1 cup shredded mozzarella cheese"
         }
      ],
-     "recipeInstructions":[
+     recipeInstructions:[
         {
-           "instruction":"1. Preheat the oven to 475°. Spray pizza pan with nonstick cooking or line a baking sheet with parchment paper. "
+           instruction:"1. Preheat the oven to 475°. Spray pizza pan with nonstick cooking or line a baking sheet with parchment paper. "
         },
         {
-           "instruction":"2. Flatten dough into a thin round and place on the pizza pan. "
+           instruction:"2. Flatten dough into a thin round and place on the pizza pan. "
         },
         {
-           "instruction":"3. Spread pizza sauce over the dough."
+           instruction:"3. Spread pizza sauce over the dough."
         },
         {
-           "instruction":" 4. Layer the toppings over the dough in the order listed."
+           instruction:" 4. Layer the toppings over the dough in the order listed."
         },
         {
-           "instruction":" 5. Bake for 8 to 10 minutes or until the crust is crisp and the cheese melted and lightly browned."
+           instruction:" 5. Bake for 8 to 10 minutes or until the crust is crisp and the cheese melted and lightly browned."
         }
      ]
   },
   {
-     "recipeTitle":"Ch. Chow Mein",
-     "recipeThumbImg":"chowmeinthumb_300x263.jpg",
-     "recipeFullImg":"recipe-chowmein.jpg",
-     "recipeBriefDescription":"A great Chow Mein comes down to the sauce - it takes more than just soy sauce and sugar! Jam packed with a surprising amount of hidden vegetables, customize this Chicken Chow Mein recipe using your protein of choice!",
-     "recipeDescription":"A great Chow Mein comes down to the sauce - it takes more than just soy sauce and sugar! Jam packed with a surprising amount of hidden vegetables, customize this Chicken Chow Mein recipe using your protein of choice!",
-     "recipeTime":"20 min",
-     "recipeServings":"4 servings",
-     "recipeIngredients":[
+     recipeTitle:"Ch. Chow Mein",
+     recipeThumbImg:"chowmeinthumb_300x263.jpg",
+     recipeFullImg:"recipe-chowmein.jpg",
+     recipeBriefDescription:"A great Chow Mein comes down to the sauce - it takes more than just soy sauce and sugar! Jam packed with a surprising amount of hidden vegetables, customize this Chicken Chow Mein recipe using your protein of choice!",
+     recipeDescription:"A great Chow Mein comes down to the sauce - it takes more than just soy sauce and sugar! Jam packed with a surprising amount of hidden vegetables, customize this Chicken Chow Mein recipe using your protein of choice!",
+     recipeTime:"20 min",
+     recipeServings:"4 servings",
+     recipeIngredients:[
         {
-           "ingredient":"1/4 batch pizza dough"
+           ingredient:"1/4 batch pizza dough"
         },
         {
-           "ingredient":"2 tablespoons Last-Minute Pizza Sauce"
+           ingredient:"2 tablespoons Last-Minute Pizza Sauce"
         },
         {
-           "ingredient":"10 slices pepperoni"
+           ingredient:"10 slices pepperoni"
         },
         {
-           "ingredient":"1 cup cooked and crumbled Italian sausage"
+           ingredient:"1 cup cooked and crumbled Italian sausage"
         },
         {
-           "ingredient":"2 large mushrooms"
+           ingredient:"2 large mushrooms"
         },
         {
-           "ingredient":"sliced 1/4 bell pepper sliced"
+           ingredient:"sliced 1/4 bell pepper sliced"
         },
         {
-           "ingredient":"1 tablespoon sliced black olives"
+           ingredient:"1 tablespoon sliced black olives"
         },
         {
-           "ingredient":"1 cup shredded mozzarella cheese"
+           ingredient:"1 cup shredded mozzarella cheese"
         }
      ],
-     "recipeInstructions":[
+     recipeInstructions:[
         {
-           "instruction":"1. Preheat the oven to 475°. Spray pizza pan with nonstick cooking or line a baking sheet with parchment paper. "
+           instruction:"1. Preheat the oven to 475°. Spray pizza pan with nonstick cooking or line a baking sheet with parchment paper. "
         },
         {
-           "instruction":"2. Flatten dough into a thin round and place on the pizza pan. "
+           instruction:"2. Flatten dough into a thin round and place on the pizza pan. "
         },
         {
-           "instruction":"3. Spread pizza sauce over the dough."
+           instruction:"3. Spread pizza sauce over the dough."
         },
         {
-           "instruction":" 4. Layer the toppings over the dough in the order listed."
+           instruction:" 4. Layer the toppings over the dough in the order listed."
         },
         {
-           "instruction":" 5. Bake for 8 to 10 minutes or until the crust is crisp and the cheese melted and lightly browned."
+           instruction:" 5. Bake for 8 to 10 minutes or until the crust is crisp and the cheese melted and lightly browned."
         }
      ]
   }
@@ -242,11 +242,13 @@ $(".links a").click(function (e) {
 }
 
 // });
+
+
 function initRecipeListeners() {
+
    $(".your-box").click(function(e) {
       let recipeIndex = e.currentTarget.id;
-      // let newRecipeObjIndex = recipeIndex + newRecipeObj;
-      // let newRecipeObjIndex = newRecipeObj;
+    
       console.log(recipeIndex);
    // });
         
@@ -258,10 +260,11 @@ function initRecipeListeners() {
   <div class="fullrecipe-image" id="fullrecipe-image">
   <img src="images/${RECIPES[recipeIndex].recipeFullImg}"
   </div>
+  
   <div class="fullrecipe-description">
       <div class="descript">Description:</div>
       <div class="fullrecipe-text">
-          ${RECIPES[recipeIndex].recipeBriefDescription}
+      ${RECIPES[recipeIndex].recipeBriefDescription}
       </div>
       <div class="total-time">Total Time</div>
       <div class="time">${RECIPES[recipeIndex].recipeTime}</div>
@@ -358,7 +361,7 @@ let newRecipeTitle = $("#recipeName").val();
 let newRecipeThumbImg = $("#attach").val();
 let newRecipeFullImg = $("#fullrecipe-image").val();
 let newRecipeBriefDescription = $("#full-description").val();
-let newRecipeDescription = $("#full-description").val();
+// let newRecipeDescription = $("#full-description").val();
 let newRecipeTime = $("#recipe-time").val();
 let newRecipeServings = $("#recipe-serve").val();
 // let newIngredient = $("#ingredient").val();
@@ -368,7 +371,7 @@ let newRecipeServings = $("#recipe-serve").val();
   let newRecipeObj = {
       recipeTitle: newRecipeTitle,
       recipeThumbImg: newRecipeThumbImg, 
-      // recipeFullImg: newRecipeFullImg,
+      recipeFullImg: newRecipeFullImg,
       recipeBriefDescription: newRecipeBriefDescription,
       // recipeDescription: newRecipeDescription,
       recipeTime: newRecipeTime,
@@ -380,6 +383,12 @@ _userProfileInfo.recipes.push(newRecipeObj);
 
 updateUserInfo(_userProfileInfo);
 }
+
+
+
+
+
+
 // ====NEED TO CHANGE TO WHAT MINE IS NAMED
 loadData();
 $("#recipeName").val("");
