@@ -481,6 +481,7 @@ $("#recipeName").val("");
     .catch((error) => {
       var errorCode = error.code;
       var errorMessage = error.message;
+      alert("UPDATE ERROR!");
       console.log("update error " + errorMessage);
     });
   }
@@ -570,6 +571,7 @@ function signOut() {
       console.log("logged out");
     })
     .catch((error) => {
+       alert("YOU ARE NOT SIGNED OUT! CLICK LOGOUT!")
       console.log("Error signing out");
     });
     $(".loginbtn").css("display");
@@ -610,6 +612,7 @@ function login(){
    .catch((error) => {
     var errorCode = error.code;
     var errorMessage = error.message;
+    alert("USERNAME OR PASSWORD IS INCORRECT! RETRY!")
     console.log("logged in error " + errorMessage);
   });
 
@@ -626,6 +629,7 @@ $(".your").show();
   .catch((error) => {
     var errorCode = error.code;
     var errorMessage = error.message;
+    alert("USERNAME OR PASSWORD IS INCORRECT! RETRY!")
     console.log("logged in error " + errorMessage);
   });
 }
