@@ -12,7 +12,7 @@ var RECIPES = [
            ingredient:"1/4 batch pizza dough"
         },
         {
-           ingredient:"2 tablespoons Last-Minute Pizza Sauce"
+         ingredient:"2 tablespoons Last-Minute Pizza Sauce"
         },
         {
            ingredient:"10 slices pepperoni"
@@ -276,7 +276,7 @@ function initRecipeListeners() {
           <div class="ingredient-container">
               <div class="title-button-holder">
               <div class="ingred-title">Ingredients:</div>
-              <button onclick="loadIngredients()">Load Ingredients</button>
+              <button onclick="loadRecipeIngredients()">Load Ingredients</button>
           </div>
               <div class="ingredient" id="ingredient">
               ${RECIPES[recipeIndex].recipeIngredients}   
@@ -342,13 +342,22 @@ $("#app .recipe-boxes").append(`
 initRecipeListeners();
 }
 
-// function loadIngredients(){
+// function loadRecipeIngredients(recipeIndex){
 //    let ingredientString = "<ul>"
-//    $.each(RECIPES.recipeIngredients, function(index){
-// ingredientString += `<li id=${index}">${RECIPES.recipeIngredients.ingredient}</li>`
+// $.each(RECIPES[recipeIndex].recipeIngredients, function(recipeIndex, recipeIngredient){
+//    ingredientString += `<li id=${recipeIndex}>
+// //    ${recipeIngredient.ingredient}</li>`;
+// });
+// ingredientString += "</ul>";
+// $("app .ingredient").html(ingredientString);
+// }
 //    });
 //    ingredientString += "</ul>";
 //    $("#app .ingredient").html(ingredientString);
+
+// function loadIngredients(){
+//    let ingredientString = "<ul>"
+//    $.each(RECIPES.recipeIngredients, 
 // }
 
 
@@ -384,6 +393,9 @@ _userProfileInfo.recipes.push(newRecipeObj);
 updateUserInfo(_userProfileInfo);
 }
 
+// function addIngredient(${recipeIndex}){
+
+// }
 
 
 
@@ -411,10 +423,6 @@ $("#recipeName").val("");
       console.log("update error " + errorMessage);
     });
   }
-
- 
-
-
 
 
 
