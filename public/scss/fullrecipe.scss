@@ -7,36 +7,38 @@
 		width: 955px;
 		min-height: 800px;
 		margin: 0 auto;
-		margin-bottom: 400px;
+		// margin-bottom: 400px;
 		display: block;
-		//
 	}
 
 	.image-descript {
 		width: 955px;
-		min-height: 422px;
-		margin-top: 250px;
-		// display: flex;
-		// justify-content: space-between;
+		height: 500px;
+		// margin-top: 200px;
+		// margin-top: 250px;
+		margin: 250px auto auto 0;
+		display: flex;
+		justify-content: space-between;
 
 		.fullrecipe-image {
-			width: 468px;
-			height: 422px;
+			// width: 468px;
+			// height: 422px;
 
-			background-position: center;
-			background-size: cover;
-			background-repeat: no-repeat;
-			opacity: 1;
+			// opacity: 1;
 
 			img {
 				width: 468px;
 				height: 422px;
-				opacity: 1;
+				// opacity: 1;
+				margin-left: 35px;
+				background-position: center;
+				background-size: cover;
+				background-repeat: no-repeat;
 				background-image: url(../images/recipe-pizza.jpg);
 			}
 		}
 		.fullrecipe-description {
-			width: 452px;
+			width: 420px;
 			height: 422px;
 
 			.descript {
@@ -73,7 +75,7 @@
 	}
 	.ingredient-container {
 		width: 445px;
-		margin-top: 500px;
+		// margin-top: 50px;
 		font-family: $font3;
 
 		.title-button-holder {
@@ -106,7 +108,7 @@
 	}
 
 	.instructions-container {
-		width: 955px;
+		width: 445px;
 		margin-top: 66px;
 
 		.instruct-title {
@@ -148,7 +150,7 @@
 		writing-mode: vertical-rl;
 		transform: rotate(180deg);
 		top: 200px;
-		left: 190px;
+		left: 160px;
 		width: 94px;
 		height: 347px;
 		text-align: left;

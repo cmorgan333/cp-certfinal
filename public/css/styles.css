@@ -779,6 +779,15 @@ h1 .load-recipes {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  background-color: rgba(242, 92, 84, 0.6);
+}
+.your-box .your-image .noimage-text {
+  font-family: LatoRegular;
+  font-size: 30px;
+  color: #000;
+  position: absolute;
+  top: 40px;
+  opacity: 0.2;
 }
 .your-box .your-image img {
   width: 300px;
@@ -916,30 +925,26 @@ h1 .load-recipes {
   width: 955px;
   min-height: 800px;
   margin: 0 auto;
-  margin-bottom: 400px;
   display: block;
 }
 .fullrecipe-content .image-descript {
   width: 955px;
-  min-height: 422px;
-  margin-top: 250px;
-}
-.fullrecipe-content .image-descript .fullrecipe-image {
-  width: 468px;
-  height: 422px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  opacity: 1;
+  height: 500px;
+  margin: 250px auto auto 0;
+  display: flex;
+  justify-content: space-between;
 }
 .fullrecipe-content .image-descript .fullrecipe-image img {
   width: 468px;
   height: 422px;
-  opacity: 1;
+  margin-left: 35px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-image: url(../images/recipe-pizza.jpg);
 }
 .fullrecipe-content .image-descript .fullrecipe-description {
-  width: 452px;
+  width: 420px;
   height: 422px;
 }
 .fullrecipe-content .image-descript .fullrecipe-description .descript {
@@ -974,7 +979,6 @@ h1 .load-recipes {
 }
 .fullrecipe-content .ingredient-container {
   width: 445px;
-  margin-top: 500px;
   font-family: LatoBlack;
 }
 .fullrecipe-content .ingredient-container .title-button-holder {
@@ -1003,7 +1007,7 @@ h1 .load-recipes {
   margin-top: 20px;
 }
 .fullrecipe-content .instructions-container {
-  width: 955px;
+  width: 445px;
   margin-top: 66px;
 }
 .fullrecipe-content .instructions-container .instruct-title {
@@ -1043,7 +1047,7 @@ h1 .load-recipes {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   top: 200px;
-  left: 190px;
+  left: 160px;
   width: 94px;
   height: 347px;
   text-align: left;

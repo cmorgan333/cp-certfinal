@@ -254,54 +254,65 @@ function initRecipeListeners() {
         
       $("#app .your-content").html(`
       <div class="fullrecipe-content">
-      <div class="fullrecipe-container">
-          <div class="image-descript">
-              <div class="side-text">${RECIPES[recipeIndex].recipeTitle}</div>
-  <div class="fullrecipe-image" id="fullrecipe-image">
-  <img src="images/${RECIPES[recipeIndex].recipeFullImg}"
-  </div>
-  
-  <div class="fullrecipe-description">
-      <div class="descript">Description:</div>
-      <div class="fullrecipe-text">
-      ${RECIPES[recipeIndex].recipeBriefDescription}
-      </div>
-      <div class="total-time">Total Time</div>
-      <div class="time">${RECIPES[recipeIndex].recipeTime}</div>
-      <div class="serve">Servings:</div>
-      <div class="servings">${RECIPES[recipeIndex].recipeServings}</div>
-  </div>
-  </div>
-  
-          <div class="ingredient-container">
-              <div class="title-button-holder">
-              <div class="ingred-title">Ingredients:</div>
-              <button onclick="loadRecipeIngredients()">Load Ingredients</button>
-          </div>
-              <div class="ingredient" id="ingredient">
-              ${RECIPES[recipeIndex].recipeIngredients}   
-              </div>
-          </div>
-          <div class="instructions-container">
-              <div class="instruct-title">Instructions:</div>
-              <div class="instruction" id="instruction">${RECIPES[recipeIndex].recipeInstructions} </div>
-   </div>
-          <button class="edit">Edit Recipe</button> 
-          <button class="close" id="close" onlick="your.html">Close</button> 
-  </div>
-  </div>`);
+        <div class="fullrecipe-container">
+            <div class="image-descript">
+                <div class="side-text">${RECIPES[recipeIndex].recipeTitle}</div>
+    <div class="fullrecipe-image" id="fullrecipe-image">
+    <img src="images/${RECIPES[recipeIndex].recipeFullImg}">
+    </div>
+    
+    <div class="fullrecipe-description">
+        <div class="descript">Description:</div>
+        <div class="fullrecipe-text">
+        ${RECIPES[recipeIndex].recipeBriefDescription}
+        </div>
+        <div class="total-time">Total Time</div>
+        <div class="time">${RECIPES[recipeIndex].recipeTime}</div>
+        <div class="serve">Servings:</div>
+        <div class="servings">${RECIPES[recipeIndex].recipeServings}</div>
+    </div>
+    </div>
+    
+            <div class="ingredient-container">
+                <div class="title-button-holder">
+                <div class="ingred-title">Ingredients:</div>
+                <button onclick="loadRecipeIngredients()">Load Ingredients</button>
+            </div>
+                <div class="ingredient" id="ingredient">
+                ${RECIPES[recipeIndex].recipeIngredients}   
+                </div>
+            </div>
+
+
+            <div class="instructions-container">
+                <div class="instruct-title">Instructions:</div>
+                <div class="instruction" id="instruction">${RECIPES[recipeIndex].recipeInstructions} </div>
+     </div>
+            <button class="edit">Edit Recipe</button> 
+            <button class="close" id="close" onlick="addCloseListener()">Close</button> 
+    </div>
+    </div>`);
     
 });
-// addCloseListener();
+addCloseListener();
 }
 
-// function addCloseListener(){
-//    $(".close").click(function(){
-//       $("#app .fullrecipe-content").html("");
-//       // $("#app .fullrecipe-content").html("");
-//       loadData();
-//    });
+function addCloseListener(){
+   $(".close").click(function(){
+      $("#app .fullrecipe").html("");
+      // $("#app .fullrecipe-content").html("");
+      loadData();
+      initRecipeListeners();
+   });
+}
+
+// function deleteRecipe(recipeIndex, index){
+// _userProfileInfo[recipeIndex].recipeIngredients.splice(index, 1);
+// updateUserInfo(_userProfileInfo);
+// console.log(recipeIndex)
+// loadData(recipeIndex);
 // }
+
 
 function loadData(){
 $.each(_userProfileInfo.recipes, function(index, recipe){
@@ -309,11 +320,12 @@ $("#app .recipe-boxes").append(`
 
         <!-- ===RECIPES===== -->
    
-        <div id="${index}"" class="your-box">
+        <div id="${index}" class="your-box">
         <div class="your-image">
+        <div class="noimage-text">UPLOAD A PHOTO!</div>
         <img src="images/pizzaThumbs-assets/${recipe.recipeThumbImg}"
             <a href="#fullrecipe">
-            <button class="view" onclick="initRecipeListeners()">View</button>
+            <button class="view" id="view" onclick="initRecipeListeners()">View</button>
          </a>
          </div>
         
@@ -333,13 +345,61 @@ $("#app .recipe-boxes").append(`
        
         <div class="edit-delete-container">
             <a href="#editrecipe">
-        <button class="edit">Edit Recipe</button>
+        <button class="edit" id="edit" onclick="editMainRecipe()">Edit Recipe</button>
      </a>
-        <button class="delete">Delete</button>
+        <button class="delete" id="delete" onclick="deleteRecipe()">Delete</button>
      </div>
 </div>`);
 });
+
 initRecipeListeners();
+
+}
+
+
+function loadRecipes() {
+   $.each(_userProfileInfo.recipes, function(index, recipe){
+      $("#app .your-content").html(`
+      <div class="fullrecipe-content">
+      <div class="fullrecipe-container" id=${index}>
+          <div class="image-descript">
+              <div class="side-text">${recipe.recipeTitle}</div>
+  <div class="fullrecipe-image" id="fullrecipe-image">
+  <img src="images/${recipe.recipeFullImg}"
+  </div>
+  
+  <div class="fullrecipe-description">
+      <div class="descript">Description:</div>
+      <div class="fullrecipe-text">
+      ${recipe.recipeBriefDescription}
+      </div>
+      <div class="total-time">Total Time</div>
+      <div class="time">${recipe.recipeTime}</div>
+      <div class="serve">Servings:</div>
+      <div class="servings">${recipe.recipeServings}</div>
+  </div>
+  </div>
+  
+          <div class="ingredient-container">
+              <div class="title-button-holder">
+              <div class="ingred-title">Ingredients:</div>
+              <button onclick="loadRecipeIngredients()">Load Ingredients</button>
+          </div>
+              <div class="ingredient" id="ingredient">
+              ${recipe.recipeIngredients}   
+              </div>
+          </div>
+          <div class="instructions-container">
+              <div class="instruct-title">Instructions:</div>
+              <div class="instruction" id="instruction">${recipe.recipeInstructions} </div>
+   </div>
+          <button class="edit">Edit Recipe</button> 
+          <button class="close" id="close" onlick="addCloseListener()">Close</button> 
+  </div>
+  </div>`);
+    
+});
+addCloseListener();
 }
 
 // function loadRecipeIngredients(recipeIndex){
@@ -368,7 +428,7 @@ initRecipeListeners();
 function addMainRecipe() {
 let newRecipeTitle = $("#recipeName").val();
 let newRecipeThumbImg = $("#attach").val();
-let newRecipeFullImg = $("#fullrecipe-image").val();
+// let newRecipeFullImg = $("#fullrecipe-image").val();
 let newRecipeBriefDescription = $("#full-description").val();
 // let newRecipeDescription = $("#full-description").val();
 let newRecipeTime = $("#recipe-time").val();
@@ -380,7 +440,7 @@ let newRecipeServings = $("#recipe-serve").val();
   let newRecipeObj = {
       recipeTitle: newRecipeTitle,
       recipeThumbImg: newRecipeThumbImg, 
-      recipeFullImg: newRecipeFullImg,
+      // recipeFullImg: newRecipeFullImg,
       recipeBriefDescription: newRecipeBriefDescription,
       // recipeDescription: newRecipeDescription,
       recipeTime: newRecipeTime,
@@ -389,8 +449,9 @@ let newRecipeServings = $("#recipe-serve").val();
       recipeInstructions: [],
   };
 _userProfileInfo.recipes.push(newRecipeObj);
-
 updateUserInfo(_userProfileInfo);
+loadData();
+loadRecipes();
 }
 
 // function addIngredient(${recipeIndex}){

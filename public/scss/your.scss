@@ -74,6 +74,16 @@ h1 {
 		align-items: center;
 		justify-content: center;
 		cursor: pointer;
+		background-color: rgba(242, 92, 84, .6);
+
+		.noimage-text {
+			font-family: $font6;
+			font-size: 30px;
+			color: #000;
+			position: absolute;
+			top: 40px;
+			opacity: .2;
+		}
 
 		img {
 			width: 300px;
