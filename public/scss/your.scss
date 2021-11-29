@@ -14,9 +14,22 @@
 		width: 1100px;
 		min-height: 775px;
 		margin: 200px auto;
+
 		// display: flex;
 		// justify-content: space-between;
 		// flex-wrap: wrap;
+	}
+
+	.load-recipes {
+		width: 168px;
+		height: 55px;
+
+		border-radius: 26px;
+		background-color: #ffd972;
+		font-family: $font2;
+		font-size: 25px;
+		border: none;
+		box-shadow: 0px 10px 6px #00000029;
 	}
 
 	.recipe-boxes {
@@ -189,14 +202,42 @@ h1 {
 	.your-content {
 		.your-hero {
 			.your-container {
+				max-width: 800px;
 				display: flex;
+				flex-wrap: wrap;
+
 				// flex-wrap: wrap;
 				// margin: 0 auto;
+
+				.recipe-boxes {
+					margin-top: 200px;
+				}
+				.recipe-box {
+				}
+				.edit-delete-container {
+					margin-bottom: 50px;
+				}
+
 				h1 {
 					padding-left: 30px;
 				}
+				.load-recipes {
+					width: 168px;
+					height: 55px;
+					position: absolute;
+					left: 30px;
+					cursor: pointer;
+					margin-top: 100px;
+					border-radius: 26px;
+					background-color: #ffd972;
+					font-family: $font2;
+					font-size: 25px;
+					border: none;
+					box-shadow: 0px 10px 6px #00000029;
+				}
 				.your-box {
 					margin: 0 auto;
+					margin-bottom: 100px;
 				}
 			}
 		}
@@ -207,12 +248,16 @@ h1 {
 	.your-content {
 		.your-hero {
 			.your-container {
+				width: 300px;
 				display: flex;
 				flex-wrap: wrap;
-				margin: 0 auto;
+				margin: 0auto;
 				h1 {
 					padding-left: 50px;
 					padding-bottom: 30px;
+				}
+				.load-recipes {
+					left: 100px;
 				}
 				.your-box {
 					width: 298px;
@@ -220,6 +265,7 @@ h1 {
 					margin: 0 auto;
 					display: flex;
 					flex-wrap: wrap;
+					margin-bottom: 100px;
 					.your-image {
 						width: 298px;
 						height: 149px;
@@ -229,7 +275,7 @@ h1 {
 						min-height: 150px;
 					}
 					.edit-delete-container {
-						margin-top: 80px;
+						margin-top: 150px;
 					}
 				}
 			}

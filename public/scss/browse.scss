@@ -1,8 +1,9 @@
 .browse-content {
 	.browse-hero {
 		width: 100vw;
+		height: 100vh;
 		height: 100%;
-		// padding-bottom: 50px;
+		padding-bottom: 50px;
 		background-image: linear-gradient(to right, rgba(167, 232, 189, .8), rgba(167, 232, 189, .8)),
 			url(../images/recipe-hero.jpg);
 		background-position: center;
@@ -119,6 +120,7 @@
 		.browse-hero {
 			height: 100%;
 			display: flex;
+
 			.recipe-container {
 				width: 524px;
 				flex-wrap: wrap;

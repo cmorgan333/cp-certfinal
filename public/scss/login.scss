@@ -9,13 +9,15 @@
 		width: 710px;
 		min-height: 455px;
 		margin: 0 auto;
+		margin-bottom: 100px;
 		display: flex;
 		justify-content: space-between;
 
 		.login-box {
 			width: 210px;
 			height: 280px;
-			margin-top: 100px;
+			margin-top: 150px;
+
 			display: block;
 		}
 		h1 {
@@ -35,6 +37,7 @@
 			font-size: 12px;
 			color: #000;
 			letter-spacing: 2px;
+			cursor: pointer;
 		}
 
 		.create-box {

@@ -154,6 +154,7 @@ nav .name {
   }
   nav .nav-holder {
     position: absolute;
+    height: 100px;
     top: 55px;
     right: 10px;
     width: 100vw;
@@ -175,8 +176,7 @@ nav .name {
   }
 }
 footer {
-  min-height: 60px;
-  margin-top: -70px;
+  margin-top: -120px;
   font-family: LatoItalic;
   color: #393939;
   font-size: 15px;
@@ -294,14 +294,14 @@ footer .socials .insta {
 }
 @media only screen and (max-width: 540px) {
   footer {
-    position: fixed;
+    position: absolute;
     padding-left: 50px;
   }
   footer .footer-container .copyright {
     margin-bottom: 10px;
   }
   footer .footer-container .misc {
-    width: 320px;
+    width: 280px;
     min-height: 60px;
   }
   footer .socials {
@@ -330,6 +330,7 @@ footer .socials .insta {
   width: 358px;
   height: 358px;
   margin-top: 43px;
+  padding-bottom: 50px;
   background-color: #ffd972;
   border-radius: 180px;
   position: absolute;
@@ -382,7 +383,9 @@ footer .socials .insta {
 }
 .browse-content .browse-hero {
   width: 100vw;
+  height: 100vh;
   height: 100%;
+  padding-bottom: 50px;
   background-image: linear-gradient(to right, rgba(167, 232, 189, 0.8), rgba(167, 232, 189, 0.8)), url(../images/recipe-hero.jpg);
   background-position: center;
   background-size: cover;
@@ -524,13 +527,14 @@ footer .socials .insta {
   width: 710px;
   min-height: 455px;
   margin: 0 auto;
+  margin-bottom: 100px;
   display: flex;
   justify-content: space-between;
 }
 .login-content .login-create-container .login-box {
   width: 210px;
   height: 280px;
-  margin-top: 100px;
+  margin-top: 150px;
   display: block;
 }
 .login-content .login-create-container h1 {
@@ -549,6 +553,7 @@ footer .socials .insta {
   font-size: 12px;
   color: #000;
   letter-spacing: 2px;
+  cursor: pointer;
 }
 .login-content .login-create-container .create-box {
   width: 250px;
@@ -698,9 +703,12 @@ footer .socials .insta {
   .create-content .field-container {
     width: 558px;
   }
+  .create-content .field-container .recipe-name {
+    width: 558px;
+  }
   .create-content .field-container .create-button {
-    margin: 150px auto;
-    margin-left: 70px;
+    width: 200px;
+    margin-top: 150px;
     margin-bottom: 100px;
   }
   .create-content .field-container .enter {
@@ -718,14 +726,18 @@ footer .socials .insta {
   .create-content .field-container {
     width: 284px;
   }
+  .create-content .field-container #recipe-name {
+    width: 284px;
+  }
   .create-content .field-container .attach {
     width: 92px;
     height: 33px;
     right: 95px;
     font-size: 12px;
   }
-  .create-content .field-container .create-button {
-    margin: 150px auto;
+  .create-content .field-container #create-button {
+    margin-left: 0;
+    margin-top: 100px;
     margin-bottom: 100px;
   }
   .create-content .field-container .enter {
@@ -737,6 +749,7 @@ footer .socials .insta {
   .create-content .field-container .create-button {
     width: 283px;
     height: 52px;
+    margin: 0 auto;
   }
 
   .input-holder .add {
@@ -756,6 +769,16 @@ footer .socials .insta {
   width: 1100px;
   min-height: 775px;
   margin: 200px auto;
+}
+.your-content .load-recipes {
+  width: 168px;
+  height: 55px;
+  border-radius: 26px;
+  background-color: #ffd972;
+  font-family: Caveat Regular;
+  font-size: 25px;
+  border: none;
+  box-shadow: 0px 10px 6px #00000029;
 }
 .your-content .recipe-boxes {
   width: 1100px;
@@ -907,24 +930,51 @@ h1 .load-recipes {
 
 @media only screen and (max-width: 1225px) {
   .your-content .your-hero .your-container {
+    max-width: 800px;
     display: flex;
+    flex-wrap: wrap;
+  }
+  .your-content .your-hero .your-container .recipe-boxes {
+    margin-top: 200px;
+  }
+  .your-content .your-hero .your-container .edit-delete-container {
+    margin-bottom: 50px;
   }
   .your-content .your-hero .your-container h1 {
     padding-left: 30px;
   }
+  .your-content .your-hero .your-container .load-recipes {
+    width: 168px;
+    height: 55px;
+    position: absolute;
+    left: 30px;
+    cursor: pointer;
+    margin-top: 100px;
+    border-radius: 26px;
+    background-color: #ffd972;
+    font-family: Caveat Regular;
+    font-size: 25px;
+    border: none;
+    box-shadow: 0px 10px 6px #00000029;
+  }
   .your-content .your-hero .your-container .your-box {
     margin: 0 auto;
+    margin-bottom: 100px;
   }
 }
 @media only screen and (max-width: 600px) {
   .your-content .your-hero .your-container {
+    width: 300px;
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
+    margin: 0auto;
   }
   .your-content .your-hero .your-container h1 {
     padding-left: 50px;
     padding-bottom: 30px;
+  }
+  .your-content .your-hero .your-container .load-recipes {
+    left: 100px;
   }
   .your-content .your-hero .your-container .your-box {
     width: 298px;
@@ -932,6 +982,7 @@ h1 .load-recipes {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 100px;
   }
   .your-content .your-hero .your-container .your-box .your-image {
     width: 298px;
@@ -942,7 +993,7 @@ h1 .load-recipes {
     min-height: 150px;
   }
   .your-content .your-hero .your-container .your-box .edit-delete-container {
-    margin-top: 80px;
+    margin-top: 150px;
   }
 }
 .fullrecipe-content {

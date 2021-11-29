@@ -119,8 +119,6 @@ nav {
 // =====RESPONSIVENESS====//
 @media only screen and (max-width: 1050px) {
 	nav {
-		// height: 100px;
-		// width: 100vw;
 		// display: flex;
 		// z-index: 99;
 		.logo {
@@ -128,6 +126,8 @@ nav {
 		}
 		.nav-holder {
 			position: absolute;
+			height: 100px;
+
 			// height: 100vh;
 			top: 55px;
 			// left: 100px;
