@@ -571,7 +571,7 @@ function signOut() {
       console.log("logged out");
     })
     .catch((error) => {
-       alert("YOU ARE NOT SIGNED OUT! CLICK LOGOUT!")
+       alert("YOU ARE NOT SIGNED OUT! CLICK LOGOUT BUTTON!");
       console.log("Error signing out");
     });
     $(".loginbtn").css("display");
@@ -612,7 +612,7 @@ function login(){
    .catch((error) => {
     var errorCode = error.code;
     var errorMessage = error.message;
-    alert("USERNAME OR PASSWORD IS INCORRECT! RETRY!")
+    alert("USERNAME OR PASSWORD IS INCORRECT! RETRY!");
     console.log("logged in error " + errorMessage);
   });
 
@@ -620,6 +620,7 @@ $(".loginbtn").hide();
 $(".logoutbtn").show();
 $(".createbtn").show();
 $(".your").show();
+
 
 
   //  $(".loginbtn").css("display", "none");
@@ -660,6 +661,7 @@ function createAccount() {
     console.log('created');
     firebase.auth().currentUser.updateProfile({
         displayName: fullName,
+        displayfName: fName,
     });
 
 _db.collection("Users")
@@ -674,12 +676,15 @@ _db.collection("Users")
 .catch((error) => {
   var errorCode = error.code;
   var errorMessage = error.message;
+  alert("USERNAME ALREADY EXISTS");
   console.log('create error ' + errorMessage);
 });
 
 
     userFullName = fullName;
+    userfName = fName;
     $(".name").html(userFullName);
+    $("#first-name").html(userfName);
     $("#fName").val("");
     $("#lName").val("");
     $("#createEmail").val("");
@@ -697,6 +702,7 @@ _db.collection("Users")
   .catch((error) => {
     var errorCode = error.code;
     var errorMessage = error.message;
+    alert("USERNAME ALREADY EXISTS");
     console.log('create error ' + errorMessage);
   });
 }
@@ -712,6 +718,7 @@ function signIn() {
   .catch((error) => {
     var errorCode = error.code;
     var errorMessage = error.message;
+    alert("MUST HAVE USERNAME AND PASSWORD")
     console.log("Error signing in " + errorMessage);
   });
 }
